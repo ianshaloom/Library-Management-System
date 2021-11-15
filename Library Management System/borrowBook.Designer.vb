@@ -25,6 +25,9 @@ Partial Class borrowBook
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.BunifuMaterialTextbox1 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -41,9 +44,6 @@ Partial Class borrowBook
         Me.exitt = New System.Windows.Forms.PictureBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.toolbar = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,6 +97,36 @@ Partial Class borrowBook
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(918, 134)
         Me.Panel1.TabIndex = 46
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(666, 45)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(98, 24)
+        Me.DateTimePicker1.TabIndex = 42
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(368, 15)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(67, 20)
+        Me.Label5.TabIndex = 41
+        Me.Label5.Text = "Book Id"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"YEAR1TRIM1", "YEAR1TRIM2", "YEAR1TRIM3", "YEAR2TRIM1", "YEAR2TRIM2", "YEAR2TRIM3", "YEAR3TRIM1", "YEAR3TRIM2", "YEAR3TRIM3", "YEAR4TRIM1", "YEAR4TRIM2", "YEAR4TRIM3"})
+        Me.ComboBox2.Location = New System.Drawing.Point(363, 43)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(92, 24)
+        Me.ComboBox2.TabIndex = 40
         '
         'Button4
         '
@@ -297,36 +327,6 @@ Partial Class borrowBook
         Me.toolbar.Name = "toolbar"
         Me.toolbar.Size = New System.Drawing.Size(990, 29)
         Me.toolbar.TabIndex = 43
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(368, 15)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(67, 20)
-        Me.Label5.TabIndex = 41
-        Me.Label5.Text = "Book Id"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"YEAR1TRIM1", "YEAR1TRIM2", "YEAR1TRIM3", "YEAR2TRIM1", "YEAR2TRIM2", "YEAR2TRIM3", "YEAR3TRIM1", "YEAR3TRIM2", "YEAR3TRIM3", "YEAR4TRIM1", "YEAR4TRIM2", "YEAR4TRIM3"})
-        Me.ComboBox2.Location = New System.Drawing.Point(363, 43)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(92, 24)
-        Me.ComboBox2.TabIndex = 40
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(666, 45)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(98, 24)
-        Me.DateTimePicker1.TabIndex = 42
         '
         'Label7
         '

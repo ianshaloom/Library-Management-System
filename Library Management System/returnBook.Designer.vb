@@ -27,6 +27,8 @@ Partial Class returnBook
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.toolbar = New System.Windows.Forms.Panel()
         Me.length = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.exitt = New System.Windows.Forms.PictureBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.BunifuMaterialTextbox1 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
@@ -42,20 +44,18 @@ Partial Class returnBook
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.exitt = New System.Windows.Forms.PictureBox()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.BunifuMaterialTextbox3 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.toolbar.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -114,6 +114,28 @@ Partial Class returnBook
         Me.length.Size = New System.Drawing.Size(116, 20)
         Me.length.TabIndex = 27
         Me.length.Text = "Return Book"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
+        Me.PictureBox1.Location = New System.Drawing.Point(932, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
+        '
+        'exitt
+        '
+        Me.exitt.BackColor = System.Drawing.Color.Transparent
+        Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
+        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
+        Me.exitt.Location = New System.Drawing.Point(961, 0)
+        Me.exitt.Name = "exitt"
+        Me.exitt.Size = New System.Drawing.Size(29, 29)
+        Me.exitt.TabIndex = 25
+        Me.exitt.TabStop = False
         '
         'DateTimePicker1
         '
@@ -318,77 +340,6 @@ Partial Class returnBook
         Me.Panel1.Size = New System.Drawing.Size(918, 134)
         Me.Panel1.TabIndex = 52
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"YEAR1TRIM1", "YEAR1TRIM2", "YEAR1TRIM3", "YEAR2TRIM1", "YEAR2TRIM2", "YEAR2TRIM3", "YEAR3TRIM1", "YEAR3TRIM2", "YEAR3TRIM3", "YEAR4TRIM1", "YEAR4TRIM2", "YEAR4TRIM3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(72, 42)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(92, 24)
-        Me.ComboBox1.TabIndex = 3
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
-        Me.PictureBox1.Location = New System.Drawing.Point(932, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
-        Me.PictureBox1.TabIndex = 26
-        Me.PictureBox1.TabStop = False
-        '
-        'exitt
-        '
-        Me.exitt.BackColor = System.Drawing.Color.Transparent
-        Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
-        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
-        Me.exitt.Location = New System.Drawing.Point(961, 0)
-        Me.exitt.Name = "exitt"
-        Me.exitt.Size = New System.Drawing.Size(29, 29)
-        Me.exitt.TabIndex = 25
-        Me.exitt.TabStop = False
-        '
-        'DataGridView2
-        '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(34, 271)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(536, 210)
-        Me.DataGridView2.TabIndex = 57
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(30, 236)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(123, 20)
-        Me.Label8.TabIndex = 56
-        Me.Label8.Text = "Books Issued"
-        '
-        'DateTimePicker2
-        '
-        Me.DateTimePicker2.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(717, 45)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(98, 24)
-        Me.DateTimePicker2.TabIndex = 44
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(713, 14)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(104, 20)
-        Me.Label9.TabIndex = 43
-        Me.Label9.Text = "Return Date"
-        '
         'BunifuMaterialTextbox3
         '
         Me.BunifuMaterialTextbox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
@@ -420,6 +371,55 @@ Partial Class returnBook
         Me.Label10.TabIndex = 46
         Me.Label10.Text = "Fine"
         '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker2.Location = New System.Drawing.Point(717, 45)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(98, 24)
+        Me.DateTimePicker2.TabIndex = 44
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(713, 14)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(104, 20)
+        Me.Label9.TabIndex = 43
+        Me.Label9.Text = "Return Date"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"YEAR1TRIM1", "YEAR1TRIM2", "YEAR1TRIM3", "YEAR2TRIM1", "YEAR2TRIM2", "YEAR2TRIM3", "YEAR3TRIM1", "YEAR3TRIM2", "YEAR3TRIM3", "YEAR4TRIM1", "YEAR4TRIM2", "YEAR4TRIM3"})
+        Me.ComboBox1.Location = New System.Drawing.Point(72, 42)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(92, 24)
+        Me.ComboBox1.TabIndex = 3
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(34, 271)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(536, 210)
+        Me.DataGridView2.TabIndex = 57
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(30, 236)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(123, 20)
+        Me.Label8.TabIndex = 56
+        Me.Label8.Text = "Books Issued"
+        '
         'returnBook
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -440,11 +440,11 @@ Partial Class returnBook
         Me.Text = "returnBook"
         Me.toolbar.ResumeLayout(False)
         Me.toolbar.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

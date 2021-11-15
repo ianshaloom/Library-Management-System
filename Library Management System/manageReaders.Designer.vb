@@ -26,28 +26,28 @@ Partial Class manageReaders
         Me.length = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.exitt = New System.Windows.Forms.PictureBox()
-        Me.BunifuMaterialTextbox1 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.StNameTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.BunifuMaterialTextbox2 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.LABELCOURSE = New System.Windows.Forms.Label()
+        Me.CourseTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.BunifuMaterialTextbox3 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ContactTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.SemCb = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ResetBtn = New System.Windows.Forms.Button()
+        Me.DeleteBtn = New System.Windows.Forms.Button()
+        Me.EditBtn = New System.Windows.Forms.Button()
+        Me.SaveBtn = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.BackBtn = New System.Windows.Forms.Button()
+        Me.StudentsDGV = New System.Windows.Forms.DataGridView()
         Me.toolbar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.StudentsDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'toolbar
@@ -96,191 +96,191 @@ Partial Class manageReaders
         Me.exitt.TabIndex = 25
         Me.exitt.TabStop = False
         '
-        'BunifuMaterialTextbox1
+        'StNameTb
         '
-        Me.BunifuMaterialTextbox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.BunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMaterialTextbox1.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox1.HintText = ""
-        Me.BunifuMaterialTextbox1.isPassword = False
-        Me.BunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.BunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox1.LineThickness = 4
-        Me.BunifuMaterialTextbox1.Location = New System.Drawing.Point(68, 42)
-        Me.BunifuMaterialTextbox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMaterialTextbox1.Name = "BunifuMaterialTextbox1"
-        Me.BunifuMaterialTextbox1.Size = New System.Drawing.Size(156, 27)
-        Me.BunifuMaterialTextbox1.TabIndex = 1
-        Me.BunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.StNameTb.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.StNameTb.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.StNameTb.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StNameTb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.StNameTb.HintForeColor = System.Drawing.Color.Empty
+        Me.StNameTb.HintText = ""
+        Me.StNameTb.isPassword = False
+        Me.StNameTb.LineFocusedColor = System.Drawing.Color.Blue
+        Me.StNameTb.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.StNameTb.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.StNameTb.LineThickness = 4
+        Me.StNameTb.Location = New System.Drawing.Point(102, 39)
+        Me.StNameTb.Margin = New System.Windows.Forms.Padding(4)
+        Me.StNameTb.Name = "StNameTb"
+        Me.StNameTb.Size = New System.Drawing.Size(190, 27)
+        Me.StNameTb.TabIndex = 1
+        Me.StNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(67, 14)
+        Me.Label1.Location = New System.Drawing.Point(101, 11)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(55, 20)
         Me.Label1.TabIndex = 29
         Me.Label1.Text = "Name"
         '
-        'Label2
+        'LABELCOURSE
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(271, 14)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 20)
-        Me.Label2.TabIndex = 31
-        Me.Label2.Text = "Course"
+        Me.LABELCOURSE.AutoSize = True
+        Me.LABELCOURSE.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LABELCOURSE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.LABELCOURSE.Location = New System.Drawing.Point(340, 11)
+        Me.LABELCOURSE.Name = "LABELCOURSE"
+        Me.LABELCOURSE.Size = New System.Drawing.Size(65, 20)
+        Me.LABELCOURSE.TabIndex = 31
+        Me.LABELCOURSE.Text = "Course"
         '
-        'BunifuMaterialTextbox2
+        'CourseTb
         '
-        Me.BunifuMaterialTextbox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.BunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMaterialTextbox2.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox2.HintText = ""
-        Me.BunifuMaterialTextbox2.isPassword = False
-        Me.BunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.BunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox2.LineThickness = 4
-        Me.BunifuMaterialTextbox2.Location = New System.Drawing.Point(272, 42)
-        Me.BunifuMaterialTextbox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMaterialTextbox2.Name = "BunifuMaterialTextbox2"
-        Me.BunifuMaterialTextbox2.Size = New System.Drawing.Size(156, 27)
-        Me.BunifuMaterialTextbox2.TabIndex = 2
-        Me.BunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.CourseTb.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.CourseTb.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CourseTb.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CourseTb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CourseTb.HintForeColor = System.Drawing.Color.Empty
+        Me.CourseTb.HintText = ""
+        Me.CourseTb.isPassword = False
+        Me.CourseTb.LineFocusedColor = System.Drawing.Color.Blue
+        Me.CourseTb.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CourseTb.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.CourseTb.LineThickness = 4
+        Me.CourseTb.Location = New System.Drawing.Point(341, 39)
+        Me.CourseTb.Margin = New System.Windows.Forms.Padding(4)
+        Me.CourseTb.Name = "CourseTb"
+        Me.CourseTb.Size = New System.Drawing.Size(142, 27)
+        Me.CourseTb.TabIndex = 2
+        Me.CourseTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(471, 14)
+        Me.Label3.Location = New System.Drawing.Point(562, 14)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(87, 20)
         Me.Label3.TabIndex = 33
         Me.Label3.Text = "Year/Sem"
         '
-        'BunifuMaterialTextbox3
+        'ContactTb
         '
-        Me.BunifuMaterialTextbox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.BunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.BunifuMaterialTextbox3.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty
-        Me.BunifuMaterialTextbox3.HintText = ""
-        Me.BunifuMaterialTextbox3.isPassword = False
-        Me.BunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.BunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Blue
-        Me.BunifuMaterialTextbox3.LineThickness = 4
-        Me.BunifuMaterialTextbox3.Location = New System.Drawing.Point(680, 42)
-        Me.BunifuMaterialTextbox3.Margin = New System.Windows.Forms.Padding(4)
-        Me.BunifuMaterialTextbox3.Name = "BunifuMaterialTextbox3"
-        Me.BunifuMaterialTextbox3.Size = New System.Drawing.Size(156, 27)
-        Me.BunifuMaterialTextbox3.TabIndex = 4
-        Me.BunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.ContactTb.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.ContactTb.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.ContactTb.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ContactTb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ContactTb.HintForeColor = System.Drawing.Color.Empty
+        Me.ContactTb.HintText = ""
+        Me.ContactTb.isPassword = False
+        Me.ContactTb.LineFocusedColor = System.Drawing.Color.Blue
+        Me.ContactTb.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.ContactTb.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.ContactTb.LineThickness = 4
+        Me.ContactTb.Location = New System.Drawing.Point(727, 42)
+        Me.ContactTb.Margin = New System.Windows.Forms.Padding(4)
+        Me.ContactTb.Name = "ContactTb"
+        Me.ContactTb.Size = New System.Drawing.Size(156, 27)
+        Me.ContactTb.TabIndex = 4
+        Me.ContactTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'ComboBox1
+        'SemCb
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"YEAR1TRIM1", "YEAR1TRIM2", "YEAR1TRIM3", "YEAR2TRIM1", "YEAR2TRIM2", "YEAR2TRIM3", "YEAR3TRIM1", "YEAR3TRIM2", "YEAR3TRIM3", "YEAR4TRIM1", "YEAR4TRIM2", "YEAR4TRIM3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(466, 42)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(163, 24)
-        Me.ComboBox1.TabIndex = 3
+        Me.SemCb.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SemCb.FormattingEnabled = True
+        Me.SemCb.Items.AddRange(New Object() {"YEAR1TRIM1", "YEAR1TRIM2", "YEAR1TRIM3", "YEAR2TRIM1", "YEAR2TRIM2", "YEAR2TRIM3", "YEAR3TRIM1", "YEAR3TRIM2", "YEAR3TRIM3", "YEAR4TRIM1", "YEAR4TRIM2", "YEAR4TRIM3"})
+        Me.SemCb.Location = New System.Drawing.Point(557, 42)
+        Me.SemCb.Name = "SemCb"
+        Me.SemCb.Size = New System.Drawing.Size(163, 24)
+        Me.SemCb.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(676, 14)
+        Me.Label4.Location = New System.Drawing.Point(723, 14)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 20)
         Me.Label4.TabIndex = 35
         Me.Label4.Text = "Contact"
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(160, 92)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(105, 26)
-        Me.Button1.TabIndex = 36
-        Me.Button1.Text = "Save"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(324, 92)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(105, 26)
-        Me.Button2.TabIndex = 37
-        Me.Button2.Text = "Edit"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(476, 92)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(105, 26)
-        Me.Button3.TabIndex = 38
-        Me.Button3.Text = "Delete"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(626, 92)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(105, 26)
-        Me.Button4.TabIndex = 39
-        Me.Button4.Text = "Reset"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.BunifuMaterialTextbox3)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.BunifuMaterialTextbox1)
-        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.ResetBtn)
+        Me.Panel1.Controls.Add(Me.DeleteBtn)
+        Me.Panel1.Controls.Add(Me.EditBtn)
+        Me.Panel1.Controls.Add(Me.SaveBtn)
+        Me.Panel1.Controls.Add(Me.ContactTb)
+        Me.Panel1.Controls.Add(Me.StNameTb)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.BunifuMaterialTextbox2)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.CourseTb)
+        Me.Panel1.Controls.Add(Me.LABELCOURSE)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
+        Me.Panel1.Controls.Add(Me.SemCb)
         Me.Panel1.Location = New System.Drawing.Point(34, 71)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(918, 134)
         Me.Panel1.TabIndex = 40
+        '
+        'ResetBtn
+        '
+        Me.ResetBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ResetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ResetBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetBtn.ForeColor = System.Drawing.Color.White
+        Me.ResetBtn.Location = New System.Drawing.Point(643, 94)
+        Me.ResetBtn.Name = "ResetBtn"
+        Me.ResetBtn.Size = New System.Drawing.Size(105, 26)
+        Me.ResetBtn.TabIndex = 43
+        Me.ResetBtn.Text = "Reset"
+        Me.ResetBtn.UseVisualStyleBackColor = False
+        '
+        'DeleteBtn
+        '
+        Me.DeleteBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DeleteBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteBtn.ForeColor = System.Drawing.Color.White
+        Me.DeleteBtn.Location = New System.Drawing.Point(493, 94)
+        Me.DeleteBtn.Name = "DeleteBtn"
+        Me.DeleteBtn.Size = New System.Drawing.Size(105, 26)
+        Me.DeleteBtn.TabIndex = 42
+        Me.DeleteBtn.Text = "Delete"
+        Me.DeleteBtn.UseVisualStyleBackColor = False
+        '
+        'EditBtn
+        '
+        Me.EditBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.EditBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditBtn.ForeColor = System.Drawing.Color.White
+        Me.EditBtn.Location = New System.Drawing.Point(341, 94)
+        Me.EditBtn.Name = "EditBtn"
+        Me.EditBtn.Size = New System.Drawing.Size(105, 26)
+        Me.EditBtn.TabIndex = 41
+        Me.EditBtn.Text = "Edit"
+        Me.EditBtn.UseVisualStyleBackColor = False
+        '
+        'SaveBtn
+        '
+        Me.SaveBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SaveBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaveBtn.ForeColor = System.Drawing.Color.White
+        Me.SaveBtn.Location = New System.Drawing.Point(177, 94)
+        Me.SaveBtn.Name = "SaveBtn"
+        Me.SaveBtn.Size = New System.Drawing.Size(105, 26)
+        Me.SaveBtn.TabIndex = 40
+        Me.SaveBtn.Text = "Save"
+        Me.SaveBtn.UseVisualStyleBackColor = False
         '
         'Label5
         '
@@ -304,26 +304,29 @@ Partial Class manageReaders
         Me.Label6.TabIndex = 41
         Me.Label6.Text = "Readers List"
         '
-        'DataGridView1
+        'BackBtn
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(34, 262)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(918, 210)
-        Me.DataGridView1.TabIndex = 42
+        Me.BackBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BackBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BackBtn.ForeColor = System.Drawing.Color.White
+        Me.BackBtn.Location = New System.Drawing.Point(436, 482)
+        Me.BackBtn.Name = "BackBtn"
+        Me.BackBtn.Size = New System.Drawing.Size(105, 26)
+        Me.BackBtn.TabIndex = 40
+        Me.BackBtn.Text = "Back"
+        Me.BackBtn.UseVisualStyleBackColor = False
         '
-        'Button5
+        'StudentsDGV
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(436, 482)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(105, 26)
-        Me.Button5.TabIndex = 40
-        Me.Button5.Text = "Back"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.StudentsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.StudentsDGV.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.StudentsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.StudentsDGV.GridColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.StudentsDGV.Location = New System.Drawing.Point(34, 255)
+        Me.StudentsDGV.Name = "StudentsDGV"
+        Me.StudentsDGV.Size = New System.Drawing.Size(918, 210)
+        Me.StudentsDGV.TabIndex = 48
         '
         'manageReaders
         '
@@ -331,14 +334,15 @@ Partial Class manageReaders
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(990, 521)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.StudentsDGV)
+        Me.Controls.Add(Me.BackBtn)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "manageReaders"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "manageReaders"
         Me.toolbar.ResumeLayout(False)
         Me.toolbar.PerformLayout()
@@ -346,7 +350,7 @@ Partial Class manageReaders
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.StudentsDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -356,21 +360,21 @@ Partial Class manageReaders
     Friend WithEvents length As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents exitt As PictureBox
-    Friend WithEvents BunifuMaterialTextbox1 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents StNameTb As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents BunifuMaterialTextbox2 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents LABELCOURSE As Label
+    Friend WithEvents CourseTb As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents Label3 As Label
-    Friend WithEvents BunifuMaterialTextbox3 As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ContactTb As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents SemCb As ComboBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button5 As Button
+    Friend WithEvents BackBtn As Button
+    Friend WithEvents StudentsDGV As DataGridView
+    Friend WithEvents ResetBtn As Button
+    Friend WithEvents DeleteBtn As Button
+    Friend WithEvents EditBtn As Button
+    Friend WithEvents SaveBtn As Button
 End Class

@@ -46,10 +46,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -71,18 +75,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addBook.Designer.vb">
-      <DependentUpon>addBook.vb</DependentUpon>
-    </Compile>
-    <Compile Include="addBook.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addReader.Designer.vb">
-      <DependentUpon>addReader.vb</DependentUpon>
-    </Compile>
-    <Compile Include="addReader.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="bookSearch.Designer.vb">
       <DependentUpon>bookSearch.vb</DependentUpon>
     </Compile>
@@ -149,12 +141,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="addBook.resx">
-      <DependentUpon>addBook.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addReader.resx">
-      <DependentUpon>addReader.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="bookSearch.resx">
       <DependentUpon>bookSearch.vb</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +216,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookshelf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

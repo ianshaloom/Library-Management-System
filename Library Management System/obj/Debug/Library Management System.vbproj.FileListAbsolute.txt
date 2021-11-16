@@ -24,3 +24,10 @@ C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management 
 C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\obj\Debug\Library Management System.pdb
 C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\bin\Debug\Resources\LibraryVbDb.mdb
+C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\obj\Debug\Library_Management_System.booksReport.resources
+C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\obj\Debug\Library_Management_System.IssuedBooksReport.resources
+C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\obj\Debug\Library_Management_System.readersReport.resources
+C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\obj\Debug\Library_Management_System.returnedBooksReportvb.resources

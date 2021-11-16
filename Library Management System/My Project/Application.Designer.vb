@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Library_Management_System.returnBook
+            Me.MainForm = Global.Library_Management_System.returnedBooksReportvb
         End Sub
     End Class
 End Namespace

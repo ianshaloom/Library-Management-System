@@ -25,22 +25,22 @@ Partial Class logIn
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(logIn))
         Me.toolbar = New System.Windows.Forms.Panel()
         Me.length = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.exitt = New System.Windows.Forms.PictureBox()
         Me.loginpanel = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.passwrd = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.usernamee = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.iconn = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.exitt = New System.Windows.Forms.PictureBox()
         Me.toolbar.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.loginpanel.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.iconn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'toolbar
@@ -66,26 +66,6 @@ Partial Class logIn
         Me.length.TabIndex = 27
         Me.length.Text = "LOG IN"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
-        Me.PictureBox1.Location = New System.Drawing.Point(597, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(29, 23)
-        Me.PictureBox1.TabIndex = 26
-        Me.PictureBox1.TabStop = False
-        '
-        'exitt
-        '
-        Me.exitt.BackColor = System.Drawing.Color.Transparent
-        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
-        Me.exitt.Location = New System.Drawing.Point(629, 1)
-        Me.exitt.Name = "exitt"
-        Me.exitt.Size = New System.Drawing.Size(29, 28)
-        Me.exitt.TabIndex = 25
-        Me.exitt.TabStop = False
-        '
         'loginpanel
         '
         Me.loginpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
@@ -98,6 +78,19 @@ Partial Class logIn
         Me.loginpanel.Name = "loginpanel"
         Me.loginpanel.Size = New System.Drawing.Size(256, 206)
         Me.loginpanel.TabIndex = 28
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(32, 146)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(190, 40)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Login"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'TextBox2
         '
@@ -154,18 +147,25 @@ Partial Class logIn
         Me.iconn.TabIndex = 4
         Me.iconn.TabStop = False
         '
-        'Button1
+        'PictureBox1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Franklin Gothic Medium", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(32, 146)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(190, 40)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Login"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
+        Me.PictureBox1.Location = New System.Drawing.Point(597, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(29, 23)
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
+        '
+        'exitt
+        '
+        Me.exitt.BackColor = System.Drawing.Color.Transparent
+        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
+        Me.exitt.Location = New System.Drawing.Point(629, 1)
+        Me.exitt.Name = "exitt"
+        Me.exitt.Size = New System.Drawing.Size(29, 28)
+        Me.exitt.TabIndex = 25
+        Me.exitt.TabStop = False
         '
         'logIn
         '
@@ -183,12 +183,12 @@ Partial Class logIn
         Me.Text = "Login"
         Me.toolbar.ResumeLayout(False)
         Me.toolbar.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.loginpanel.ResumeLayout(False)
         Me.loginpanel.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.iconn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

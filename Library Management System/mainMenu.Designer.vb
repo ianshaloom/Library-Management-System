@@ -76,7 +76,7 @@ Partial Class mainMenu
         Me.toolbar.Dock = System.Windows.Forms.DockStyle.Top
         Me.toolbar.Location = New System.Drawing.Point(0, 0)
         Me.toolbar.Name = "toolbar"
-        Me.toolbar.Size = New System.Drawing.Size(1051, 29)
+        Me.toolbar.Size = New System.Drawing.Size(935, 29)
         Me.toolbar.TabIndex = 26
         '
         'length
@@ -96,7 +96,7 @@ Partial Class mainMenu
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
         Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
-        Me.PictureBox1.Location = New System.Drawing.Point(993, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(877, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
         Me.PictureBox1.TabIndex = 26
@@ -107,7 +107,7 @@ Partial Class mainMenu
         Me.exitt.BackColor = System.Drawing.Color.Transparent
         Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
         Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
-        Me.exitt.Location = New System.Drawing.Point(1022, 0)
+        Me.exitt.Location = New System.Drawing.Point(906, 0)
         Me.exitt.Name = "exitt"
         Me.exitt.Size = New System.Drawing.Size(29, 29)
         Me.exitt.TabIndex = 25
@@ -184,7 +184,7 @@ Partial Class mainMenu
         Me.searchpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.searchpanel.Controls.Add(Me.Panel7)
         Me.searchpanel.Controls.Add(Me.Panel6)
-        Me.searchpanel.Location = New System.Drawing.Point(331, 32)
+        Me.searchpanel.Location = New System.Drawing.Point(273, 32)
         Me.searchpanel.Name = "searchpanel"
         Me.searchpanel.Size = New System.Drawing.Size(656, 366)
         Me.searchpanel.TabIndex = 28
@@ -258,7 +258,7 @@ Partial Class mainMenu
         Me.librarypanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.librarypanel.Controls.Add(Me.Panel8)
         Me.librarypanel.Controls.Add(Me.Panel9)
-        Me.librarypanel.Location = New System.Drawing.Point(331, 32)
+        Me.librarypanel.Location = New System.Drawing.Point(273, 32)
         Me.librarypanel.Name = "librarypanel"
         Me.librarypanel.Size = New System.Drawing.Size(656, 366)
         Me.librarypanel.TabIndex = 39
@@ -332,7 +332,7 @@ Partial Class mainMenu
         Me.managepanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.managepanel.Controls.Add(Me.Panel3)
         Me.managepanel.Controls.Add(Me.Panel2)
-        Me.managepanel.Location = New System.Drawing.Point(331, 32)
+        Me.managepanel.Location = New System.Drawing.Point(273, 32)
         Me.managepanel.Name = "managepanel"
         Me.managepanel.Size = New System.Drawing.Size(656, 366)
         Me.managepanel.TabIndex = 41
@@ -406,7 +406,7 @@ Partial Class mainMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1051, 405)
+        Me.ClientSize = New System.Drawing.Size(935, 405)
         Me.Controls.Add(Me.searchpanel)
         Me.Controls.Add(Me.librarypanel)
         Me.Controls.Add(Me.managepanel)

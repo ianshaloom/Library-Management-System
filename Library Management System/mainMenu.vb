@@ -1,65 +1,64 @@
 ﻿Public Class mainMenu
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub exitt_Click(sender As Object, e As EventArgs) Handles exitt.Click
+        Close()
+    End Sub
+
+    Private Sub SearchBook_Click(sender As Object, e As EventArgs) Handles SearchBook.Click
+        bookSearch.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub SearchReader_Click(sender As Object, e As EventArgs) Handles SearchReader.Click
+        readerSearch.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub IssueBook_Click(sender As Object, e As EventArgs) Handles IssueBook.Click
+        Dim obj As New borrowBook
+        obj.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ReturnBook_Click(sender As Object, e As EventArgs) Handles ReturnBook.Click
+        Dim obj As New returnBook
+        obj.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ManageBooks_Click(sender As Object, e As EventArgs) Handles ManageBooks.Click
+        Dim obj As New manageBooks
+        obj.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ManageReaders_Click(sender As Object, e As EventArgs) Handles ManageReaders.Click
+        Dim obj As New manageReaders
+        obj.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub searchBtn_Click(sender As Object, e As EventArgs) Handles searchBtn.Click
         searchpanel.Visible = True
         librarypanel.Visible = False
         managepanel.Visible = False
     End Sub
 
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+    Private Sub libraryBtn_Click(sender As Object, e As EventArgs) Handles libraryBtn.Click
         searchpanel.Visible = False
         librarypanel.Visible = True
         managepanel.Visible = False
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+    Private Sub manageBtn_Click(sender As Object, e As EventArgs) Handles manageBtn.Click
         searchpanel.Visible = False
         librarypanel.Visible = False
         managepanel.Visible = True
     End Sub
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+    Private Sub reportsBtn_Click(sender As Object, e As EventArgs) Handles reportsBtn.Click
         searchpanel.Visible = False
         librarypanel.Visible = False
         managepanel.Visible = False
-    End Sub
-
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
-        bookSearch.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
-        readerSearch.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles PictureBox14.Click
-        borrowBook.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
-        returnBook.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub PictureBox15_Click(sender As Object, e As EventArgs) Handles PictureBox15.Click
-        manageBooks.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub PictureBox16_Click(sender As Object, e As EventArgs) Handles PictureBox16.Click
-        manageReaders.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Me.WindowState = FormWindowState.Minimized
-
-    End Sub
-
-    Private Sub exitt_Click(sender As Object, e As EventArgs) Handles exitt.Click
-        Close()
     End Sub
 End Class

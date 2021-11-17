@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 Public Class bookSearch
-    Dim con = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Resources\LibraryVbDb.mdb")
+    Dim con = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb")
     Public Sub FilterData(valueToSearch As String)
         'SELECT * From Users WHERE CONCAT(fname, lname, age) like '%F%'
         Dim searchQuery As String = "SELECT * From BookTbl WHERE BkName like '%" & valueToSearch & "%'"

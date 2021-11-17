@@ -1,17 +1,25 @@
 ﻿Imports System.Data.OleDb
 Public Class manageReaders
-    Dim con = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Resources\LibraryVbDb.mdb")
+    Dim pro As String
+    Dim connstring As String
+    Dim command As String
+    Dim myconnection As OleDbConnection = New OleDbConnection
+    Dim ds As New OleDbDataAdapter
+    Dim con As New OleDbConnection
+    Dim dt As New DataTable
+
+    Dim conn = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb")
     Private Sub DisplayBook()
-        con.Open()
+        conn.Open()
         Dim query = "select * from StudentTbl"
         Dim adapter As OleDbDataAdapter
-        Dim cmd = New OleDbCommand(query, con)
+        Dim cmd = New OleDbCommand(query, conn)
         adapter = New OleDbDataAdapter(cmd)
         Dim builder = New OleDbCommandBuilder(adapter)
         Dim ds = New DataSet()
         adapter.Fill(ds)
         StudentsDGV.DataSource = ds.Tables(0)
-        con.close()
+        conn.Close()
     End Sub
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
         Dim obj As New mainMenu
@@ -27,23 +35,34 @@ Public Class manageReaders
         Application.Exit()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub SaveBtn_Click(sender As Object, e As EventArgs) Handles SaveBtn.Click
-        If StNameTb.Text = "" Or LABELCOURSE.Text = "" Or SemCb.Text = "" Or ContactTb.Text = "" Then
+        If StNameTb.Text = "" Or CourseTb.Text = "" Or SemCb.Text = "" Or ContactTb.Text = "" Then
             MsgBox("Missing Information")
         Else
-            con.Open()
-            Dim query = "Insert Into StudentTbl(StName,StCourse,StYearSem,StContact) values('" & StNameTb.Text & "','" & CourseTb.Text & "','" & SemCb.Text & "'," & ContactTb.Text & ")"
-            Dim cmd As OleDbCommand
-            cmd = New OleDbCommand(query, con)
-            cmd.ExecuteNonQuery()
-            MsgBox("Student Saved")
-            con.Close()
-            DisplayBook()
-            Reset()
+            pro = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb"
+            connstring = pro
+            myconnection.ConnectionString = connstring
+            myconnection.Open()
+            command = "insert into StudentTbl ([StName],[StCourse],[StYearSem],[StContact]) values ('" & StNameTb.Text & "','" & CourseTb.Text & "','" & SemCb.Text & "'," & ContactTb.Text & ")"
+
+            Dim cmd As OleDbCommand = New OleDbCommand(command, myconnection)
+            cmd.Parameters.Add(New OleDbParameter("StName", CType(StNameTb.Text, String)))
+            cmd.Parameters.Add(New OleDbParameter("StCourse", CType(CourseTb.Text, String)))
+            cmd.Parameters.Add(New OleDbParameter("StYearSem", CType(SemCb.Text, String)))
+            cmd.Parameters.Add(New OleDbParameter("StContact", CType(ContactTb.Text, String)))
+            MsgBox("Record Saved")
+            Try
+                cmd.ExecuteNonQuery()
+                cmd.Dispose()
+                myconnection.Close()
+
+                DisplayBook()
+                Reset()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
+
         End If
     End Sub
 
@@ -59,6 +78,7 @@ Public Class manageReaders
     Dim key = 0
     Private Sub StudentsDGV_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles StudentsDGV.CellMouseClick
         Dim row As DataGridViewRow = StudentsDGV.Rows(e.RowIndex)
+
         StNameTb.Text = row.Cells(1).Value.ToString
         CourseTb.Text = row.Cells(2).Value.ToString
         SemCb.Text = row.Cells(3).Value.ToString
@@ -75,13 +95,13 @@ Public Class manageReaders
         If key = 0 Then
             MsgBox("Missing Information")
         Else
-            con.Open()
+            conn.Open()
             Dim query = "delete from StudentTbl where StId=" & key & ""
             Dim cmd As OleDbCommand
-            cmd = New OleDbCommand(query, con)
+            cmd = New OleDbCommand(query, conn)
             cmd.ExecuteNonQuery()
             MsgBox("Student Deleted")
-            con.Close()
+            conn.Close()
             DisplayBook()
             Reset()
         End If
@@ -91,13 +111,13 @@ Public Class manageReaders
         If StNameTb.Text = "" Or CourseTb.Text = "" Or SemCb.Text = "" Or ContactTb.Text = "" Then
             MsgBox("Missing Information")
         Else
-            con.Open()
-            Dim query = "update StudentTbl set StName='" & StNameTb.Text & "',StCourse='" & CourseTb.Text & "',StYearSem='" & SemCb.Text & "',StContact=" & ContactTb.Text & " where StId=" & key & ""
+            conn.Open()
+            Dim query = "update StudentTbl set StName='" & StNameTb.Text & "',StCourse='" & CourseTb.Text & "',StYearSem='" & SemCb.Text & "',StContact=" & ContactTb.Text & "where BkId=" & key & ""
             Dim cmd As OleDbCommand
-            cmd = New OleDbCommand(query, con)
+            cmd = New OleDbCommand(query, conn)
             cmd.ExecuteNonQuery()
-            MsgBox("Student Edited")
-            con.Close()
+            MsgBox("Book Edited")
+            conn.Close()
             DisplayBook()
             Reset()
         End If

@@ -31,3 +31,4 @@ C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management 
 C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\obj\Debug\Library_Management_System.IssuedBooksReport.resources
 C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\obj\Debug\Library_Management_System.readersReport.resources
 C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\obj\Debug\Library_Management_System.returnedBooksReportvb.resources
+C:\Users\Theemain\Documents\GitHub\Library Management System\Library Management System\obj\Debug\Library_Management_System.Form2.resources

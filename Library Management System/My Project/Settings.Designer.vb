@@ -64,6 +64,17 @@ Namespace My
                 Return CType(Me("LibraryVbDbConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\Database"& _ 
+            "1.mdb")>  _
+        Public ReadOnly Property Database1ConnectionString() As String
+            Get
+                Return CType(Me("Database1ConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

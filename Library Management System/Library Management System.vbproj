@@ -99,10 +99,10 @@
     <Compile Include="borrowBook.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="example.Designer.vb">
+      <DependentUpon>example.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="example.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IssuedBooksReport.Designer.vb">
@@ -128,11 +128,11 @@
     <Compile Include="mainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="manageBooks.Designer.vb">
@@ -186,8 +186,8 @@
     <EmbeddedResource Include="borrowBook.resx">
       <DependentUpon>borrowBook.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="example.resx">
+      <DependentUpon>example.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IssuedBooksReport.resx">
       <DependentUpon>IssuedBooksReport.vb</DependentUpon>
@@ -195,8 +195,8 @@
     <EmbeddedResource Include="mainMenu.resx">
       <DependentUpon>mainMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manageBooks.resx">
       <DependentUpon>manageBooks.vb</DependentUpon>

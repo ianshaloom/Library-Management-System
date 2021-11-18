@@ -32,9 +32,11 @@ Partial Class manageReaders
         Me.CourseTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ContactTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.SemCb = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.SemCb = New System.Windows.Forms.ComboBox()
+        Me.IdTb = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.ResetBtn = New System.Windows.Forms.Button()
         Me.DeleteBtn = New System.Windows.Forms.Button()
         Me.EditBtn = New System.Windows.Forms.Button()
@@ -109,7 +111,7 @@ Partial Class manageReaders
         Me.StNameTb.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.StNameTb.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.StNameTb.LineThickness = 4
-        Me.StNameTb.Location = New System.Drawing.Point(102, 39)
+        Me.StNameTb.Location = New System.Drawing.Point(218, 42)
         Me.StNameTb.Margin = New System.Windows.Forms.Padding(4)
         Me.StNameTb.Name = "StNameTb"
         Me.StNameTb.Size = New System.Drawing.Size(190, 27)
@@ -121,7 +123,7 @@ Partial Class manageReaders
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(101, 11)
+        Me.Label1.Location = New System.Drawing.Point(217, 14)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(55, 20)
         Me.Label1.TabIndex = 29
@@ -132,7 +134,7 @@ Partial Class manageReaders
         Me.LABELCOURSE.AutoSize = True
         Me.LABELCOURSE.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LABELCOURSE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.LABELCOURSE.Location = New System.Drawing.Point(340, 11)
+        Me.LABELCOURSE.Location = New System.Drawing.Point(417, 14)
         Me.LABELCOURSE.Name = "LABELCOURSE"
         Me.LABELCOURSE.Size = New System.Drawing.Size(65, 20)
         Me.LABELCOURSE.TabIndex = 31
@@ -151,7 +153,7 @@ Partial Class manageReaders
         Me.CourseTb.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CourseTb.LineMouseHoverColor = System.Drawing.Color.Blue
         Me.CourseTb.LineThickness = 4
-        Me.CourseTb.Location = New System.Drawing.Point(341, 39)
+        Me.CourseTb.Location = New System.Drawing.Point(418, 42)
         Me.CourseTb.Margin = New System.Windows.Forms.Padding(4)
         Me.CourseTb.Name = "CourseTb"
         Me.CourseTb.Size = New System.Drawing.Size(142, 27)
@@ -163,11 +165,11 @@ Partial Class manageReaders
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(562, 14)
+        Me.Label3.Location = New System.Drawing.Point(604, 14)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(87, 20)
+        Me.Label3.Size = New System.Drawing.Size(45, 20)
         Me.Label3.TabIndex = 33
-        Me.Label3.Text = "Year/Sem"
+        Me.Label3.Text = "Year"
         '
         'ContactTb
         '
@@ -189,16 +191,6 @@ Partial Class manageReaders
         Me.ContactTb.TabIndex = 4
         Me.ContactTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'SemCb
-        '
-        Me.SemCb.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SemCb.FormattingEnabled = True
-        Me.SemCb.Items.AddRange(New Object() {"YEAR1TRIM1", "YEAR1TRIM2", "YEAR1TRIM3", "YEAR2TRIM1", "YEAR2TRIM2", "YEAR2TRIM3", "YEAR3TRIM1", "YEAR3TRIM2", "YEAR3TRIM3", "YEAR4TRIM1", "YEAR4TRIM2", "YEAR4TRIM3"})
-        Me.SemCb.Location = New System.Drawing.Point(557, 42)
-        Me.SemCb.Name = "SemCb"
-        Me.SemCb.Size = New System.Drawing.Size(163, 24)
-        Me.SemCb.TabIndex = 3
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -213,6 +205,9 @@ Partial Class manageReaders
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.SemCb)
+        Me.Panel1.Controls.Add(Me.IdTb)
+        Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.ResetBtn)
         Me.Panel1.Controls.Add(Me.DeleteBtn)
         Me.Panel1.Controls.Add(Me.EditBtn)
@@ -224,11 +219,50 @@ Partial Class manageReaders
         Me.Panel1.Controls.Add(Me.LABELCOURSE)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.SemCb)
         Me.Panel1.Location = New System.Drawing.Point(34, 71)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(918, 134)
         Me.Panel1.TabIndex = 40
+        '
+        'SemCb
+        '
+        Me.SemCb.FormattingEnabled = True
+        Me.SemCb.Items.AddRange(New Object() {"1", "2", "3", "4"})
+        Me.SemCb.Location = New System.Drawing.Point(608, 48)
+        Me.SemCb.Name = "SemCb"
+        Me.SemCb.Size = New System.Drawing.Size(45, 21)
+        Me.SemCb.TabIndex = 47
+        '
+        'IdTb
+        '
+        Me.IdTb.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.IdTb.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.IdTb.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IdTb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.IdTb.HintForeColor = System.Drawing.Color.Empty
+        Me.IdTb.HintText = ""
+        Me.IdTb.isPassword = False
+        Me.IdTb.LineFocusedColor = System.Drawing.Color.Blue
+        Me.IdTb.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.IdTb.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.IdTb.LineThickness = 4
+        Me.IdTb.Location = New System.Drawing.Point(86, 42)
+        Me.IdTb.Margin = New System.Windows.Forms.Padding(4)
+        Me.IdTb.Name = "IdTb"
+        Me.IdTb.Size = New System.Drawing.Size(92, 27)
+        Me.IdTb.TabIndex = 45
+        Me.IdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(85, 14)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(92, 20)
+        Me.Label2.TabIndex = 46
+        Me.Label2.Text = "Student ID"
         '
         'ResetBtn
         '
@@ -366,7 +400,6 @@ Partial Class manageReaders
     Friend WithEvents CourseTb As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents Label3 As Label
     Friend WithEvents ContactTb As Bunifu.Framework.UI.BunifuMaterialTextbox
-    Friend WithEvents SemCb As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label5 As Label
@@ -377,4 +410,7 @@ Partial Class manageReaders
     Friend WithEvents DeleteBtn As Button
     Friend WithEvents EditBtn As Button
     Friend WithEvents SaveBtn As Button
+    Friend WithEvents IdTb As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents SemCb As ComboBox
 End Class

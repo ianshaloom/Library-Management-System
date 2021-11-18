@@ -26,4 +26,20 @@ Public Class bookSearch
     Private Sub SearchTb_OnTextChange(sender As Object, e As EventArgs) Handles SearchTb.OnTextChange
         FilterData(SearchTb.text)
     End Sub
+
+    Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
+        Dim obj As New mainMenu
+        obj.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub exitt_Click(sender As Object, e As EventArgs) Handles exitt.Click
+        Dim obj As New mainMenu
+        obj.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class

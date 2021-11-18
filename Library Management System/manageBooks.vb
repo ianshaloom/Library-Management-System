@@ -11,7 +11,7 @@ Public Class manageBooks
     Dim conn = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb")
     Private Sub DisplayBook()
         conn.Open()
-        Dim query = "select * from BookTbll"
+        Dim query = "select * from BookTbl"
         Dim adapter As OleDbDataAdapter
         Dim cmd = New OleDbCommand(query, conn)
         adapter = New OleDbDataAdapter(cmd)
@@ -40,7 +40,7 @@ Public Class manageBooks
             connstring = pro
             myconnection.ConnectionString = connstring
             myconnection.Open()
-            command = "insert into BookTbll ([BkName],[BkAuthor],[BkPublisher],[BkPrice],[BkQuantity]) values ('" & BNameTb.Text & "','" & BAuthorTb.Text & "','" & BPublisherTb.Text & "'," & BPriceTb.Text & "," & BQuantityTb.Text & ")"
+            command = "insert into BookTbl ([BkName],[BkAuthor],[BkPublisher],[BkPrice],[BkQuantity]) values ('" & BNameTb.Text & "','" & BAuthorTb.Text & "','" & BPublisherTb.Text & "'," & BPriceTb.Text & "," & BQuantityTb.Text & ")"
 
             Dim cmd As OleDbCommand = New OleDbCommand(command, myconnection)
             cmd.Parameters.Add(New OleDbParameter("BkName", CType(BNameTb.Text, String)))
@@ -48,6 +48,7 @@ Public Class manageBooks
             cmd.Parameters.Add(New OleDbParameter("BkPublisher", CType(BPublisherTb.Text, String)))
             cmd.Parameters.Add(New OleDbParameter("BkPrice", CType(BPriceTb.Text, Int32)))
             cmd.Parameters.Add(New OleDbParameter("BkQuantity", CType(BQuantityTb.Text, Int32)))
+
             MsgBox("Record Saved")
             Try
                 cmd.ExecuteNonQuery()
@@ -69,7 +70,7 @@ Public Class manageBooks
             MsgBox("Missing Information")
         Else
             conn.Open()
-            Dim query = "update BookTbll set BkName='" & BNameTb.Text & "',BkAuthor='" & BAuthorTb.Text & "',BkPublisher='" & BPublisherTb.Text & "',BkPrice=" & BPriceTb.Text & ",BkQuantity=" & BQuantityTb.Text & " where BkId=" & key & ""
+            Dim query = "update BookTbl set BkName='" & BNameTb.Text & "',BkAuthor='" & BAuthorTb.Text & "',BkPublisher='" & BPublisherTb.Text & "',BkPrice=" & BPriceTb.Text & ",BkQuantity=" & BQuantityTb.Text & " where BkId=" & key & ""
             Dim cmd As OleDbCommand
             cmd = New OleDbCommand(query, conn)
             cmd.ExecuteNonQuery()
@@ -85,7 +86,7 @@ Public Class manageBooks
             MsgBox("Missing Information")
         Else
             conn.Open()
-            Dim query = "delete from BookTbll where BkId=" & key & ""
+            Dim query = "delete from BookTbl where BkId=" & key & ""
             Dim cmd As OleDbCommand
             cmd = New OleDbCommand(query, conn)
             cmd.ExecuteNonQuery()

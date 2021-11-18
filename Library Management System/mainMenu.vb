@@ -1,7 +1,9 @@
 ﻿Public Class mainMenu
 
     Private Sub exitt_Click(sender As Object, e As EventArgs) Handles exitt.Click
-        Close()
+        Dim obj As New logIn
+        obj.Show()
+        Me.Hide()
     End Sub
 
     Private Sub SearchBook_Click(sender As Object, e As EventArgs) Handles SearchBook.Click

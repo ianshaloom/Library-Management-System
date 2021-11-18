@@ -26,7 +26,11 @@ Public Class returnBook
         con.close()
     End Sub
     Private Sub exitt_Click(sender As Object, e As EventArgs) Handles exitt.Click
-        Application.Exit()
+
+        Dim obj As New mainMenu
+        obj.Show()
+        Me.Hide()
+
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -67,7 +71,7 @@ Public Class returnBook
             FineTb.Text = "No Fine"
         Else
             fine = Days - 5
-            FineTb.Text = "Kshs" + Convert.ToString(fine * 100)
+            FineTb.Text = "Kshs" + Convert.ToString(fine * 111)
         End If
     End Sub
     Private Sub RemoveFromIssue()

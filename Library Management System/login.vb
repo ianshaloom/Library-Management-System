@@ -1,6 +1,6 @@
 ﻿Public Class logIn
     Private Sub exitt_Click(sender As Object, e As EventArgs) Handles exitt.Click
-        Close()
+        Application.Exit()
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click

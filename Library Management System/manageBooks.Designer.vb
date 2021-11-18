@@ -24,6 +24,8 @@ Partial Class manageBooks
     Private Sub InitializeComponent()
         Me.toolbar = New System.Windows.Forms.Panel()
         Me.length = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.exitt = New System.Windows.Forms.PictureBox()
         Me.BackBtn = New System.Windows.Forms.Button()
         Me.BooksDGV = New System.Windows.Forms.DataGridView()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -43,13 +45,11 @@ Partial Class manageBooks
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.exitt = New System.Windows.Forms.PictureBox()
         Me.toolbar.SuspendLayout()
-        CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'toolbar
@@ -75,6 +75,28 @@ Partial Class manageBooks
         Me.length.Size = New System.Drawing.Size(60, 20)
         Me.length.TabIndex = 27
         Me.length.Text = "Books"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
+        Me.PictureBox1.Location = New System.Drawing.Point(932, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
+        '
+        'exitt
+        '
+        Me.exitt.BackColor = System.Drawing.Color.Transparent
+        Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
+        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
+        Me.exitt.Location = New System.Drawing.Point(961, 0)
+        Me.exitt.Name = "exitt"
+        Me.exitt.Size = New System.Drawing.Size(29, 29)
+        Me.exitt.TabIndex = 25
+        Me.exitt.TabStop = False
         '
         'BackBtn
         '
@@ -351,28 +373,6 @@ Partial Class manageBooks
         Me.Label3.TabIndex = 33
         Me.Label3.Text = "Publisher"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
-        Me.PictureBox1.Location = New System.Drawing.Point(932, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
-        Me.PictureBox1.TabIndex = 26
-        Me.PictureBox1.TabStop = False
-        '
-        'exitt
-        '
-        Me.exitt.BackColor = System.Drawing.Color.Transparent
-        Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
-        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
-        Me.exitt.Location = New System.Drawing.Point(961, 0)
-        Me.exitt.Name = "exitt"
-        Me.exitt.Size = New System.Drawing.Size(29, 29)
-        Me.exitt.TabIndex = 25
-        Me.exitt.TabStop = False
-        '
         'manageBooks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -391,11 +391,11 @@ Partial Class manageBooks
         Me.Text = "manageBooks"
         Me.toolbar.ResumeLayout(False)
         Me.toolbar.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

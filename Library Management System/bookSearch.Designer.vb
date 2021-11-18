@@ -31,6 +31,7 @@ Partial Class bookSearch
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SearchBtn = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.SearchTb = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.BackBtn = New System.Windows.Forms.Button()
         CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.toolbar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +67,7 @@ Partial Class bookSearch
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(386, 4)
+        Me.Label5.Location = New System.Drawing.Point(212, 3)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(125, 20)
         Me.Label5.TabIndex = 45
@@ -97,6 +98,7 @@ Partial Class bookSearch
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.BackBtn)
         Me.Panel1.Controls.Add(Me.SearchBtn)
         Me.Panel1.Controls.Add(Me.SearchTb)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
@@ -152,6 +154,19 @@ Partial Class bookSearch
         Me.SearchTb.TabIndex = 55
         Me.SearchTb.text = ""
         '
+        'BackBtn
+        '
+        Me.BackBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BackBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BackBtn.ForeColor = System.Drawing.Color.White
+        Me.BackBtn.Location = New System.Drawing.Point(44, 334)
+        Me.BackBtn.Name = "BackBtn"
+        Me.BackBtn.Size = New System.Drawing.Size(105, 26)
+        Me.BackBtn.TabIndex = 56
+        Me.BackBtn.Text = "Back"
+        Me.BackBtn.UseVisualStyleBackColor = False
+        '
         'bookSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -181,4 +196,5 @@ Partial Class bookSearch
     Friend WithEvents Panel1 As Panel
     Friend WithEvents SearchBtn As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents SearchTb As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents BackBtn As Button
 End Class

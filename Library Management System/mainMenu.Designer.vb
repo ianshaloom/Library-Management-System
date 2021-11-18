@@ -22,6 +22,7 @@ Partial Class mainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.toolbar = New System.Windows.Forms.Panel()
         Me.length = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -52,6 +53,7 @@ Partial Class mainMenu
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.ManageBooks = New System.Windows.Forms.Button()
+        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.toolbar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -194,7 +196,7 @@ Partial Class mainMenu
         Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Panel7.Controls.Add(Me.Label6)
         Me.Panel7.Controls.Add(Me.SearchBook)
-        Me.Panel7.Location = New System.Drawing.Point(90, 91)
+        Me.Panel7.Location = New System.Drawing.Point(90, 90)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(166, 166)
         Me.Panel7.TabIndex = 45
@@ -226,7 +228,7 @@ Partial Class mainMenu
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Panel6.Controls.Add(Me.SearchReader)
         Me.Panel6.Controls.Add(Me.Label7)
-        Me.Panel6.Location = New System.Drawing.Point(403, 91)
+        Me.Panel6.Location = New System.Drawing.Point(400, 90)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(166, 166)
         Me.Panel6.TabIndex = 45
@@ -268,7 +270,7 @@ Partial Class mainMenu
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Panel8.Controls.Add(Me.IssueBook)
         Me.Panel8.Controls.Add(Me.Label2)
-        Me.Panel8.Location = New System.Drawing.Point(97, 109)
+        Me.Panel8.Location = New System.Drawing.Point(90, 90)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(166, 166)
         Me.Panel8.TabIndex = 46
@@ -300,7 +302,7 @@ Partial Class mainMenu
         Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Panel9.Controls.Add(Me.ReturnBook)
         Me.Panel9.Controls.Add(Me.Label8)
-        Me.Panel9.Location = New System.Drawing.Point(387, 106)
+        Me.Panel9.Location = New System.Drawing.Point(400, 90)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(166, 166)
         Me.Panel9.TabIndex = 47
@@ -342,7 +344,7 @@ Partial Class mainMenu
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Panel3.Controls.Add(Me.ManageReaders)
         Me.Panel3.Controls.Add(Me.Label10)
-        Me.Panel3.Location = New System.Drawing.Point(396, 105)
+        Me.Panel3.Location = New System.Drawing.Point(400, 90)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(166, 166)
         Me.Panel3.TabIndex = 47
@@ -374,7 +376,7 @@ Partial Class mainMenu
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.ManageBooks)
-        Me.Panel2.Location = New System.Drawing.Point(87, 105)
+        Me.Panel2.Location = New System.Drawing.Point(90, 90)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(166, 166)
         Me.Panel2.TabIndex = 46
@@ -401,6 +403,13 @@ Partial Class mainMenu
         Me.ManageBooks.TabIndex = 46
         Me.ManageBooks.UseVisualStyleBackColor = True
         '
+        'BunifuDragControl1
+        '
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Me.toolbar
+        Me.BunifuDragControl1.Vertical = True
+        '
         'mainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -408,12 +417,13 @@ Partial Class mainMenu
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(935, 405)
         Me.Controls.Add(Me.searchpanel)
-        Me.Controls.Add(Me.librarypanel)
         Me.Controls.Add(Me.managepanel)
+        Me.Controls.Add(Me.librarypanel)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "mainMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.toolbar.ResumeLayout(False)
         Me.toolbar.PerformLayout()
@@ -469,4 +479,5 @@ Partial Class mainMenu
     Friend WithEvents manageBtn As Button
     Friend WithEvents libraryBtn As Button
     Friend WithEvents reportsBtn As Button
+    Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
 End Class

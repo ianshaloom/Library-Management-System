@@ -29,9 +29,9 @@ Partial Class bookSearch
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.exitt = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BackBtn = New System.Windows.Forms.Button()
         Me.SearchBtn = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.SearchTb = New Bunifu.Framework.UI.BunifuTextbox()
-        Me.BackBtn = New System.Windows.Forms.Button()
         CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.toolbar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,6 +107,19 @@ Partial Class bookSearch
         Me.Panel1.Size = New System.Drawing.Size(210, 378)
         Me.Panel1.TabIndex = 54
         '
+        'BackBtn
+        '
+        Me.BackBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BackBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BackBtn.ForeColor = System.Drawing.Color.White
+        Me.BackBtn.Location = New System.Drawing.Point(44, 334)
+        Me.BackBtn.Name = "BackBtn"
+        Me.BackBtn.Size = New System.Drawing.Size(105, 26)
+        Me.BackBtn.TabIndex = 56
+        Me.BackBtn.Text = "Back"
+        Me.BackBtn.UseVisualStyleBackColor = False
+        '
         'SearchBtn
         '
         Me.SearchBtn.Activecolor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(139, Byte), Integer), CType(CType(87, Byte), Integer))
@@ -154,19 +167,6 @@ Partial Class bookSearch
         Me.SearchTb.TabIndex = 55
         Me.SearchTb.text = ""
         '
-        'BackBtn
-        '
-        Me.BackBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BackBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BackBtn.ForeColor = System.Drawing.Color.White
-        Me.BackBtn.Location = New System.Drawing.Point(44, 334)
-        Me.BackBtn.Name = "BackBtn"
-        Me.BackBtn.Size = New System.Drawing.Size(105, 26)
-        Me.BackBtn.TabIndex = 56
-        Me.BackBtn.Text = "Back"
-        Me.BackBtn.UseVisualStyleBackColor = False
-        '
         'bookSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -177,6 +177,7 @@ Partial Class bookSearch
         Me.Controls.Add(Me.BooksDGV)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "bookSearch"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "bookSearch"
         CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.toolbar.ResumeLayout(False)

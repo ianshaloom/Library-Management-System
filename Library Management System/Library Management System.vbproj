@@ -81,6 +81,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="booksdue.Designer.vb">
+      <DependentUpon>booksdue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="booksdue.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="bookSearch.Designer.vb">
       <DependentUpon>bookSearch.vb</DependentUpon>
     </Compile>
@@ -103,6 +109,12 @@
       <DependentUpon>example.vb</DependentUpon>
     </Compile>
     <Compile Include="example.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="incomereport.Designer.vb">
+      <DependentUpon>incomereport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="incomereport.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IssuedBooksReport.Designer.vb">
@@ -177,6 +189,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="booksdue.resx">
+      <DependentUpon>booksdue.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bookSearch.resx">
       <DependentUpon>bookSearch.vb</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="example.resx">
       <DependentUpon>example.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="incomereport.resx">
+      <DependentUpon>incomereport.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IssuedBooksReport.resx">
       <DependentUpon>IssuedBooksReport.vb</DependentUpon>
@@ -287,9 +305,20 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\report.png" />
+    <None Include="Resources\return.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\issue.png" />
     <Content Include="Resources\LibraryVbDb.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\register2.png" />
+    <None Include="Resources\register1.png" />
+    <None Include="Resources\register.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\search-paper.png" />
+    <None Include="Resources\search.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

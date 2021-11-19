@@ -5,7 +5,7 @@ Public Class returnedBooksReportvb
     Dim con = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb")
     Private Sub DisplayBook()
         con.Open()
-        Dim query = "select * from BookTbl"
+        Dim query = "select * from ReturnTbl"
         Dim adapter As OleDbDataAdapter
         Dim cmd = New OleDbCommand(query, con)
         adapter = New OleDbDataAdapter(cmd)
@@ -41,5 +41,18 @@ Public Class returnedBooksReportvb
 
     Private Sub returnedBooksReportvb_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisplayBook()
+    End Sub
+
+    Private Sub exitt_Click(sender As Object, e As EventArgs) Handles exitt.Click
+        Dim obj As New mainMenu
+        obj.Show()
+        Me.Hide()
+        obj.searchpanel.Visible = False
+        obj.managepanel.Visible = False
+        obj.librarypanel.Visible = False
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class

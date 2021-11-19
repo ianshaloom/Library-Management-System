@@ -23,116 +23,371 @@ Partial Class mainMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(mainMenu))
         Me.toolbar = New System.Windows.Forms.Panel()
         Me.length = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.exitt = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.sidepanel = New System.Windows.Forms.Panel()
+        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.booksreport = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.searchpanel = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.SearchReader = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.SearchBook = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.managepanel = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.userregister = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.bookregister = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.librarypanel = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton2 = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.searchBtn = New System.Windows.Forms.Button()
         Me.manageBtn = New System.Windows.Forms.Button()
         Me.libraryBtn = New System.Windows.Forms.Button()
         Me.reportsBtn = New System.Windows.Forms.Button()
-        Me.searchpanel = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.SearchBook = New System.Windows.Forms.Button()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.SearchReader = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.exitt = New System.Windows.Forms.PictureBox()
+        Me.readersreport = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.issuedreport = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.incomereport = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.duereport = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.returnedreport = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.librarypanel = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.IssueBook = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.ReturnBook = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.managepanel = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.ManageReaders = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.ManageBooks = New System.Windows.Forms.Button()
-        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.toolbar.SuspendLayout()
+        Me.sidepanel.SuspendLayout()
+        CType(Me.booksreport, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.searchpanel.SuspendLayout()
+        CType(Me.SearchReader, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SearchBook, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.managepanel.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        CType(Me.userregister, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel5.SuspendLayout()
+        CType(Me.bookregister, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.librarypanel.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
-        Me.searchpanel.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.librarypanel.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        Me.Panel9.SuspendLayout()
-        Me.managepanel.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel2.SuspendLayout()
+        CType(Me.readersreport, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.issuedreport, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.incomereport, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.duereport, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.returnedreport, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'toolbar
         '
-        Me.toolbar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.toolbar.BackColor = System.Drawing.Color.Cyan
         Me.toolbar.Controls.Add(Me.length)
         Me.toolbar.Controls.Add(Me.PictureBox1)
         Me.toolbar.Controls.Add(Me.exitt)
         Me.toolbar.Dock = System.Windows.Forms.DockStyle.Top
         Me.toolbar.Location = New System.Drawing.Point(0, 0)
         Me.toolbar.Name = "toolbar"
-        Me.toolbar.Size = New System.Drawing.Size(935, 29)
+        Me.toolbar.Size = New System.Drawing.Size(937, 29)
         Me.toolbar.TabIndex = 26
         '
         'length
         '
         Me.length.AutoSize = True
-        Me.length.Dock = System.Windows.Forms.DockStyle.Fill
         Me.length.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.length.ForeColor = System.Drawing.Color.Black
-        Me.length.Location = New System.Drawing.Point(0, 0)
+        Me.length.Location = New System.Drawing.Point(73, 5)
         Me.length.Name = "length"
         Me.length.Size = New System.Drawing.Size(111, 20)
         Me.length.TabIndex = 27
         Me.length.Text = "MAIN MENU"
         '
-        'PictureBox1
+        'sidepanel
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
-        Me.PictureBox1.Location = New System.Drawing.Point(877, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
-        Me.PictureBox1.TabIndex = 26
-        Me.PictureBox1.TabStop = False
+        Me.sidepanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.sidepanel.Controls.Add(Me.searchBtn)
+        Me.sidepanel.Controls.Add(Me.manageBtn)
+        Me.sidepanel.Controls.Add(Me.libraryBtn)
+        Me.sidepanel.Controls.Add(Me.reportsBtn)
+        Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
+        Me.sidepanel.Location = New System.Drawing.Point(0, 29)
+        Me.sidepanel.Name = "sidepanel"
+        Me.sidepanel.Size = New System.Drawing.Size(269, 375)
+        Me.sidepanel.TabIndex = 27
         '
-        'exitt
+        'BunifuDragControl1
         '
-        Me.exitt.BackColor = System.Drawing.Color.Transparent
-        Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
-        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
-        Me.exitt.Location = New System.Drawing.Point(906, 0)
-        Me.exitt.Name = "exitt"
-        Me.exitt.Size = New System.Drawing.Size(29, 29)
-        Me.exitt.TabIndex = 25
-        Me.exitt.TabStop = False
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Me.toolbar
+        Me.BunifuDragControl1.Vertical = True
         '
-        'Panel1
+        'booksreport
         '
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.searchBtn)
-        Me.Panel1.Controls.Add(Me.manageBtn)
-        Me.Panel1.Controls.Add(Me.libraryBtn)
-        Me.Panel1.Controls.Add(Me.reportsBtn)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 29)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(269, 376)
-        Me.Panel1.TabIndex = 27
+        Me.booksreport.BackColor = System.Drawing.Color.Transparent
+        Me.booksreport.Image = Global.Library_Management_System.My.Resources.Resources.report
+        Me.booksreport.ImageActive = Nothing
+        Me.booksreport.Location = New System.Drawing.Point(349, 63)
+        Me.booksreport.Name = "booksreport"
+        Me.booksreport.Size = New System.Drawing.Size(96, 96)
+        Me.booksreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.booksreport.TabIndex = 48
+        Me.booksreport.TabStop = False
+        Me.booksreport.Zoom = 10
+        '
+        'searchpanel
+        '
+        Me.searchpanel.BackgroundImage = CType(resources.GetObject("searchpanel.BackgroundImage"), System.Drawing.Image)
+        Me.searchpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.searchpanel.Controls.Add(Me.SearchReader)
+        Me.searchpanel.Controls.Add(Me.Label6)
+        Me.searchpanel.Controls.Add(Me.SearchBook)
+        Me.searchpanel.Controls.Add(Me.Label5)
+        Me.searchpanel.GradientBottomLeft = System.Drawing.Color.Cyan
+        Me.searchpanel.GradientBottomRight = System.Drawing.Color.Navy
+        Me.searchpanel.GradientTopLeft = System.Drawing.Color.Cyan
+        Me.searchpanel.GradientTopRight = System.Drawing.Color.Cyan
+        Me.searchpanel.Location = New System.Drawing.Point(274, 33)
+        Me.searchpanel.Name = "searchpanel"
+        Me.searchpanel.Quality = 10
+        Me.searchpanel.Size = New System.Drawing.Size(656, 366)
+        Me.searchpanel.TabIndex = 46
+        '
+        'SearchReader
+        '
+        Me.SearchReader.BackColor = System.Drawing.Color.Transparent
+        Me.SearchReader.Image = CType(resources.GetObject("SearchReader.Image"), System.Drawing.Image)
+        Me.SearchReader.ImageActive = Nothing
+        Me.SearchReader.Location = New System.Drawing.Point(400, 90)
+        Me.SearchReader.Name = "SearchReader"
+        Me.SearchReader.Size = New System.Drawing.Size(150, 150)
+        Me.SearchReader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.SearchReader.TabIndex = 48
+        Me.SearchReader.TabStop = False
+        Me.SearchReader.Zoom = 10
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(413, 251)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(119, 17)
+        Me.Label6.TabIndex = 49
+        Me.Label6.Text = "Search Reader"
+        '
+        'SearchBook
+        '
+        Me.SearchBook.BackColor = System.Drawing.Color.Transparent
+        Me.SearchBook.Image = CType(resources.GetObject("SearchBook.Image"), System.Drawing.Image)
+        Me.SearchBook.ImageActive = Nothing
+        Me.SearchBook.Location = New System.Drawing.Point(90, 90)
+        Me.SearchBook.Name = "SearchBook"
+        Me.SearchBook.Size = New System.Drawing.Size(150, 150)
+        Me.SearchBook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.SearchBook.TabIndex = 46
+        Me.SearchBook.TabStop = False
+        Me.SearchBook.Zoom = 10
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(99, 251)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(103, 17)
+        Me.Label5.TabIndex = 47
+        Me.Label5.Text = "Search Book"
+        '
+        'managepanel
+        '
+        Me.managepanel.BackgroundImage = CType(resources.GetObject("managepanel.BackgroundImage"), System.Drawing.Image)
+        Me.managepanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.managepanel.Controls.Add(Me.Panel4)
+        Me.managepanel.Controls.Add(Me.Panel5)
+        Me.managepanel.GradientBottomLeft = System.Drawing.Color.Cyan
+        Me.managepanel.GradientBottomRight = System.Drawing.Color.MidnightBlue
+        Me.managepanel.GradientTopLeft = System.Drawing.Color.Cyan
+        Me.managepanel.GradientTopRight = System.Drawing.Color.Cyan
+        Me.managepanel.Location = New System.Drawing.Point(274, 33)
+        Me.managepanel.Name = "managepanel"
+        Me.managepanel.Quality = 10
+        Me.managepanel.Size = New System.Drawing.Size(656, 366)
+        Me.managepanel.TabIndex = 47
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Transparent
+        Me.Panel4.Controls.Add(Me.userregister)
+        Me.Panel4.Controls.Add(Me.Label3)
+        Me.Panel4.Location = New System.Drawing.Point(400, 90)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(166, 188)
+        Me.Panel4.TabIndex = 45
+        '
+        'userregister
+        '
+        Me.userregister.BackColor = System.Drawing.Color.Transparent
+        Me.userregister.Image = CType(resources.GetObject("userregister.Image"), System.Drawing.Image)
+        Me.userregister.ImageActive = Nothing
+        Me.userregister.Location = New System.Drawing.Point(7, 8)
+        Me.userregister.Name = "userregister"
+        Me.userregister.Size = New System.Drawing.Size(150, 150)
+        Me.userregister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.userregister.TabIndex = 48
+        Me.userregister.TabStop = False
+        Me.userregister.Zoom = 10
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(17, 167)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(131, 17)
+        Me.Label3.TabIndex = 36
+        Me.Label3.Text = "Register Reader"
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Transparent
+        Me.Panel5.Controls.Add(Me.bookregister)
+        Me.Panel5.Controls.Add(Me.Label4)
+        Me.Panel5.Location = New System.Drawing.Point(90, 90)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(166, 188)
+        Me.Panel5.TabIndex = 45
+        '
+        'bookregister
+        '
+        Me.bookregister.BackColor = System.Drawing.Color.Transparent
+        Me.bookregister.Image = Global.Library_Management_System.My.Resources.Resources.book
+        Me.bookregister.ImageActive = Nothing
+        Me.bookregister.Location = New System.Drawing.Point(7, 8)
+        Me.bookregister.Name = "bookregister"
+        Me.bookregister.Size = New System.Drawing.Size(150, 150)
+        Me.bookregister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.bookregister.TabIndex = 46
+        Me.bookregister.TabStop = False
+        Me.bookregister.Zoom = 10
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(21, 166)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(115, 17)
+        Me.Label4.TabIndex = 34
+        Me.Label4.Text = "Register Book"
+        '
+        'librarypanel
+        '
+        Me.librarypanel.BackgroundImage = CType(resources.GetObject("librarypanel.BackgroundImage"), System.Drawing.Image)
+        Me.librarypanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.librarypanel.Controls.Add(Me.Panel2)
+        Me.librarypanel.Controls.Add(Me.Panel3)
+        Me.librarypanel.GradientBottomLeft = System.Drawing.Color.Cyan
+        Me.librarypanel.GradientBottomRight = System.Drawing.Color.Navy
+        Me.librarypanel.GradientTopLeft = System.Drawing.Color.Cyan
+        Me.librarypanel.GradientTopRight = System.Drawing.Color.Cyan
+        Me.librarypanel.Location = New System.Drawing.Point(274, 33)
+        Me.librarypanel.Name = "librarypanel"
+        Me.librarypanel.Quality = 10
+        Me.librarypanel.Size = New System.Drawing.Size(656, 366)
+        Me.librarypanel.TabIndex = 47
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.Controls.Add(Me.BunifuImageButton1)
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Location = New System.Drawing.Point(400, 90)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(166, 188)
+        Me.Panel2.TabIndex = 45
+        '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton1.Image = Global.Library_Management_System.My.Resources.Resources.returnn
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(7, 8)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(150, 150)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 48
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(17, 167)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(103, 17)
+        Me.Label1.TabIndex = 36
+        Me.Label1.Text = "Return Book"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Transparent
+        Me.Panel3.Controls.Add(Me.BunifuImageButton2)
+        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Location = New System.Drawing.Point(90, 90)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(166, 188)
+        Me.Panel3.TabIndex = 45
+        '
+        'BunifuImageButton2
+        '
+        Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuImageButton2.Image = Global.Library_Management_System.My.Resources.Resources.issue
+        Me.BunifuImageButton2.ImageActive = Nothing
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(7, 8)
+        Me.BunifuImageButton2.Name = "BunifuImageButton2"
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(150, 150)
+        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton2.TabIndex = 46
+        Me.BunifuImageButton2.TabStop = False
+        Me.BunifuImageButton2.Zoom = 10
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(21, 166)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(91, 17)
+        Me.Label2.TabIndex = 34
+        Me.Label2.Text = "Issue Book"
         '
         'searchBtn
         '
         Me.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.searchBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.searchBtn.ForeColor = System.Drawing.Color.White
+        Me.searchBtn.Image = Global.Library_Management_System.My.Resources.Resources.search_paper
         Me.searchBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.searchBtn.Location = New System.Drawing.Point(-2, 0)
         Me.searchBtn.Name = "searchBtn"
@@ -146,12 +401,13 @@ Partial Class mainMenu
         Me.manageBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.manageBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.manageBtn.ForeColor = System.Drawing.Color.White
+        Me.manageBtn.Image = CType(resources.GetObject("manageBtn.Image"), System.Drawing.Image)
         Me.manageBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.manageBtn.Location = New System.Drawing.Point(-2, 93)
         Me.manageBtn.Name = "manageBtn"
         Me.manageBtn.Size = New System.Drawing.Size(269, 93)
         Me.manageBtn.TabIndex = 44
-        Me.manageBtn.Text = "Manage"
+        Me.manageBtn.Text = "Register"
         Me.manageBtn.UseVisualStyleBackColor = True
         '
         'libraryBtn
@@ -159,6 +415,7 @@ Partial Class mainMenu
         Me.libraryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.libraryBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.libraryBtn.ForeColor = System.Drawing.Color.White
+        Me.libraryBtn.Image = Global.Library_Management_System.My.Resources.Resources.bookshelf
         Me.libraryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.libraryBtn.Location = New System.Drawing.Point(-2, 186)
         Me.libraryBtn.Name = "libraryBtn"
@@ -181,245 +438,181 @@ Partial Class mainMenu
         Me.reportsBtn.Text = "Reports"
         Me.reportsBtn.UseVisualStyleBackColor = True
         '
-        'searchpanel
+        'PictureBox1
         '
-        Me.searchpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.searchpanel.Controls.Add(Me.Panel7)
-        Me.searchpanel.Controls.Add(Me.Panel6)
-        Me.searchpanel.Location = New System.Drawing.Point(273, 32)
-        Me.searchpanel.Name = "searchpanel"
-        Me.searchpanel.Size = New System.Drawing.Size(656, 366)
-        Me.searchpanel.TabIndex = 28
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
+        Me.PictureBox1.Location = New System.Drawing.Point(879, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
         '
-        'Panel7
+        'exitt
         '
-        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.Panel7.Controls.Add(Me.Label6)
-        Me.Panel7.Controls.Add(Me.SearchBook)
-        Me.Panel7.Location = New System.Drawing.Point(90, 90)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(166, 166)
-        Me.Panel7.TabIndex = 45
+        Me.exitt.BackColor = System.Drawing.Color.Transparent
+        Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
+        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
+        Me.exitt.Location = New System.Drawing.Point(908, 0)
+        Me.exitt.Name = "exitt"
+        Me.exitt.Size = New System.Drawing.Size(29, 29)
+        Me.exitt.TabIndex = 25
+        Me.exitt.TabStop = False
         '
-        'Label6
+        'readersreport
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(19, 146)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(117, 17)
-        Me.Label6.TabIndex = 34
-        Me.Label6.Text = "SEARCH BOOK"
+        Me.readersreport.BackColor = System.Drawing.Color.Transparent
+        Me.readersreport.Image = Global.Library_Management_System.My.Resources.Resources.report
+        Me.readersreport.ImageActive = Nothing
+        Me.readersreport.Location = New System.Drawing.Point(554, 63)
+        Me.readersreport.Name = "readersreport"
+        Me.readersreport.Size = New System.Drawing.Size(96, 96)
+        Me.readersreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.readersreport.TabIndex = 49
+        Me.readersreport.TabStop = False
+        Me.readersreport.Zoom = 10
         '
-        'SearchBook
+        'issuedreport
         '
-        Me.SearchBook.BackgroundImage = Global.Library_Management_System.My.Resources.Resources.search
-        Me.SearchBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.SearchBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SearchBook.Location = New System.Drawing.Point(7, 12)
-        Me.SearchBook.Name = "SearchBook"
-        Me.SearchBook.Size = New System.Drawing.Size(152, 132)
-        Me.SearchBook.TabIndex = 46
-        Me.SearchBook.UseVisualStyleBackColor = True
+        Me.issuedreport.BackColor = System.Drawing.Color.Transparent
+        Me.issuedreport.Image = Global.Library_Management_System.My.Resources.Resources.report
+        Me.issuedreport.ImageActive = Nothing
+        Me.issuedreport.Location = New System.Drawing.Point(763, 63)
+        Me.issuedreport.Name = "issuedreport"
+        Me.issuedreport.Size = New System.Drawing.Size(96, 96)
+        Me.issuedreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.issuedreport.TabIndex = 50
+        Me.issuedreport.TabStop = False
+        Me.issuedreport.Zoom = 10
         '
-        'Panel6
+        'incomereport
         '
-        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.Panel6.Controls.Add(Me.SearchReader)
-        Me.Panel6.Controls.Add(Me.Label7)
-        Me.Panel6.Location = New System.Drawing.Point(400, 90)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(166, 166)
-        Me.Panel6.TabIndex = 45
+        Me.incomereport.BackColor = System.Drawing.Color.Transparent
+        Me.incomereport.Image = Global.Library_Management_System.My.Resources.Resources.report
+        Me.incomereport.ImageActive = Nothing
+        Me.incomereport.Location = New System.Drawing.Point(761, 235)
+        Me.incomereport.Name = "incomereport"
+        Me.incomereport.Size = New System.Drawing.Size(96, 96)
+        Me.incomereport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.incomereport.TabIndex = 53
+        Me.incomereport.TabStop = False
+        Me.incomereport.Zoom = 10
         '
-        'SearchReader
+        'duereport
         '
-        Me.SearchReader.BackgroundImage = Global.Library_Management_System.My.Resources.Resources.search
-        Me.SearchReader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.SearchReader.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SearchReader.Location = New System.Drawing.Point(7, 6)
-        Me.SearchReader.Name = "SearchReader"
-        Me.SearchReader.Size = New System.Drawing.Size(152, 132)
-        Me.SearchReader.TabIndex = 47
-        Me.SearchReader.UseVisualStyleBackColor = True
+        Me.duereport.BackColor = System.Drawing.Color.Transparent
+        Me.duereport.Image = Global.Library_Management_System.My.Resources.Resources.report
+        Me.duereport.ImageActive = Nothing
+        Me.duereport.Location = New System.Drawing.Point(552, 235)
+        Me.duereport.Name = "duereport"
+        Me.duereport.Size = New System.Drawing.Size(96, 96)
+        Me.duereport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.duereport.TabIndex = 52
+        Me.duereport.TabStop = False
+        Me.duereport.Zoom = 10
+        '
+        'returnedreport
+        '
+        Me.returnedreport.BackColor = System.Drawing.Color.Transparent
+        Me.returnedreport.Image = Global.Library_Management_System.My.Resources.Resources.report
+        Me.returnedreport.ImageActive = Nothing
+        Me.returnedreport.Location = New System.Drawing.Point(347, 235)
+        Me.returnedreport.Name = "returnedreport"
+        Me.returnedreport.Size = New System.Drawing.Size(96, 96)
+        Me.returnedreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.returnedreport.TabIndex = 51
+        Me.returnedreport.TabStop = False
+        Me.returnedreport.Zoom = 10
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(16, 141)
+        Me.Label7.Location = New System.Drawing.Point(346, 171)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(134, 17)
-        Me.Label7.TabIndex = 36
-        Me.Label7.Text = "SEARCH READER"
-        '
-        'librarypanel
-        '
-        Me.librarypanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.librarypanel.Controls.Add(Me.Panel8)
-        Me.librarypanel.Controls.Add(Me.Panel9)
-        Me.librarypanel.Location = New System.Drawing.Point(273, 32)
-        Me.librarypanel.Name = "librarypanel"
-        Me.librarypanel.Size = New System.Drawing.Size(656, 366)
-        Me.librarypanel.TabIndex = 39
-        '
-        'Panel8
-        '
-        Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.Panel8.Controls.Add(Me.IssueBook)
-        Me.Panel8.Controls.Add(Me.Label2)
-        Me.Panel8.Location = New System.Drawing.Point(90, 90)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(166, 166)
-        Me.Panel8.TabIndex = 46
-        '
-        'IssueBook
-        '
-        Me.IssueBook.BackgroundImage = Global.Library_Management_System.My.Resources.Resources.upload
-        Me.IssueBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.IssueBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IssueBook.Location = New System.Drawing.Point(7, 12)
-        Me.IssueBook.Name = "IssueBook"
-        Me.IssueBook.Size = New System.Drawing.Size(152, 132)
-        Me.IssueBook.TabIndex = 46
-        Me.IssueBook.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(36, 147)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(93, 20)
-        Me.Label2.TabIndex = 41
-        Me.Label2.Text = "Issue Book"
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.Panel9.Controls.Add(Me.ReturnBook)
-        Me.Panel9.Controls.Add(Me.Label8)
-        Me.Panel9.Location = New System.Drawing.Point(400, 90)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(166, 166)
-        Me.Panel9.TabIndex = 47
-        '
-        'ReturnBook
-        '
-        Me.ReturnBook.BackgroundImage = Global.Library_Management_System.My.Resources.Resources.download
-        Me.ReturnBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ReturnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ReturnBook.Location = New System.Drawing.Point(7, 6)
-        Me.ReturnBook.Name = "ReturnBook"
-        Me.ReturnBook.Size = New System.Drawing.Size(152, 132)
-        Me.ReturnBook.TabIndex = 47
-        Me.ReturnBook.UseVisualStyleBackColor = True
+        Me.Label7.Size = New System.Drawing.Size(99, 20)
+        Me.Label7.TabIndex = 54
+        Me.Label7.Text = "Books Report"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(31, 146)
+        Me.Label8.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(551, 171)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(105, 20)
-        Me.Label8.TabIndex = 42
-        Me.Label8.Text = "Return Book"
-        '
-        'managepanel
-        '
-        Me.managepanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
-        Me.managepanel.Controls.Add(Me.Panel3)
-        Me.managepanel.Controls.Add(Me.Panel2)
-        Me.managepanel.Location = New System.Drawing.Point(273, 32)
-        Me.managepanel.Name = "managepanel"
-        Me.managepanel.Size = New System.Drawing.Size(656, 366)
-        Me.managepanel.TabIndex = 41
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.ManageReaders)
-        Me.Panel3.Controls.Add(Me.Label10)
-        Me.Panel3.Location = New System.Drawing.Point(400, 90)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(166, 166)
-        Me.Panel3.TabIndex = 47
-        '
-        'ManageReaders
-        '
-        Me.ManageReaders.BackgroundImage = Global.Library_Management_System.My.Resources.Resources.user
-        Me.ManageReaders.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ManageReaders.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ManageReaders.Location = New System.Drawing.Point(7, 6)
-        Me.ManageReaders.Name = "ManageReaders"
-        Me.ManageReaders.Size = New System.Drawing.Size(152, 132)
-        Me.ManageReaders.TabIndex = 47
-        Me.ManageReaders.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(16, 141)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(135, 17)
-        Me.Label10.TabIndex = 36
-        Me.Label10.Text = "Manage Readers"
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Label9)
-        Me.Panel2.Controls.Add(Me.ManageBooks)
-        Me.Panel2.Location = New System.Drawing.Point(90, 90)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(166, 166)
-        Me.Panel2.TabIndex = 46
+        Me.Label8.Size = New System.Drawing.Size(113, 20)
+        Me.Label8.TabIndex = 55
+        Me.Label8.Text = "Readers Report"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(19, 146)
+        Me.Label9.Location = New System.Drawing.Point(760, 171)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(119, 17)
-        Me.Label9.TabIndex = 34
-        Me.Label9.Text = "Manage Books"
+        Me.Label9.Size = New System.Drawing.Size(98, 40)
+        Me.Label9.TabIndex = 56
+        Me.Label9.Text = "Issued Books" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "     Report"
         '
-        'ManageBooks
+        'Label10
         '
-        Me.ManageBooks.BackgroundImage = Global.Library_Management_System.My.Resources.Resources.bookshelf
-        Me.ManageBooks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ManageBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ManageBooks.Location = New System.Drawing.Point(7, 12)
-        Me.ManageBooks.Name = "ManageBooks"
-        Me.ManageBooks.Size = New System.Drawing.Size(152, 132)
-        Me.ManageBooks.TabIndex = 46
-        Me.ManageBooks.UseVisualStyleBackColor = True
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(760, 347)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(105, 20)
+        Me.Label10.TabIndex = 59
+        Me.Label10.Text = "Income Report"
         '
-        'BunifuDragControl1
+        'Label11
         '
-        Me.BunifuDragControl1.Fixed = True
-        Me.BunifuDragControl1.Horizontal = True
-        Me.BunifuDragControl1.TargetControl = Me.toolbar
-        Me.BunifuDragControl1.Vertical = True
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(551, 347)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(82, 40)
+        Me.Label11.TabIndex = 58
+        Me.Label11.Text = "Books Due" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "   Report"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(346, 347)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(115, 40)
+        Me.Label12.TabIndex = 57
+        Me.Label12.Text = "Returned Books" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "       Report"
         '
         'mainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(935, 405)
+        Me.ClientSize = New System.Drawing.Size(937, 404)
         Me.Controls.Add(Me.searchpanel)
-        Me.Controls.Add(Me.managepanel)
         Me.Controls.Add(Me.librarypanel)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.managepanel)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.incomereport)
+        Me.Controls.Add(Me.duereport)
+        Me.Controls.Add(Me.returnedreport)
+        Me.Controls.Add(Me.issuedreport)
+        Me.Controls.Add(Me.readersreport)
+        Me.Controls.Add(Me.booksreport)
+        Me.Controls.Add(Me.sidepanel)
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "mainMenu"
@@ -427,25 +620,35 @@ Partial Class mainMenu
         Me.Text = "Form1"
         Me.toolbar.ResumeLayout(False)
         Me.toolbar.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
+        Me.sidepanel.ResumeLayout(False)
+        CType(Me.booksreport, System.ComponentModel.ISupportInitialize).EndInit()
         Me.searchpanel.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
-        Me.librarypanel.ResumeLayout(False)
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel8.PerformLayout()
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel9.PerformLayout()
+        Me.searchpanel.PerformLayout()
+        CType(Me.SearchReader, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SearchBook, System.ComponentModel.ISupportInitialize).EndInit()
         Me.managepanel.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        CType(Me.userregister, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        CType(Me.bookregister, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.librarypanel.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        CType(Me.BunifuImageButton2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.readersreport, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.issuedreport, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.incomereport, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.duereport, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.returnedreport, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -453,31 +656,41 @@ Partial Class mainMenu
     Friend WithEvents length As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents exitt As PictureBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents searchpanel As Panel
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents librarypanel As Panel
-    Friend WithEvents managepanel As Panel
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents SearchBook As Button
-    Friend WithEvents SearchReader As Button
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents IssueBook As Button
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents ReturnBook As Button
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents ManageReaders As Button
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label9 As Label
-    Friend WithEvents ManageBooks As Button
+    Friend WithEvents sidepanel As Panel
     Friend WithEvents searchBtn As Button
     Friend WithEvents manageBtn As Button
     Friend WithEvents libraryBtn As Button
     Friend WithEvents reportsBtn As Button
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
+    Friend WithEvents SearchBook As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents SearchReader As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents searchpanel As Bunifu.Framework.UI.BunifuGradientPanel
+    Friend WithEvents librarypanel As Bunifu.Framework.UI.BunifuGradientPanel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents BunifuImageButton2 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents Label2 As Label
+    Friend WithEvents managepanel As Bunifu.Framework.UI.BunifuGradientPanel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents userregister As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents bookregister As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents booksreport As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents readersreport As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents issuedreport As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents incomereport As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents duereport As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents returnedreport As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
 End Class

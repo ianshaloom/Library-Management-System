@@ -26,10 +26,12 @@ Public Class returnBook
         con.close()
     End Sub
     Private Sub exitt_Click(sender As Object, e As EventArgs) Handles exitt.Click
-
         Dim obj As New mainMenu
         obj.Show()
         Me.Hide()
+        obj.searchpanel.Visible = False
+        obj.managepanel.Visible = False
+        obj.librarypanel.Visible = True
 
     End Sub
 

@@ -32,6 +32,11 @@ Library Management System
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Library_Management_System.My.Resources.Resources.bookshelf1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
 <member name="P:Library_Management_System.My.Resources.Resources.dash">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

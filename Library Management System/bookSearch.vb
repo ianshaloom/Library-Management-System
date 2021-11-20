@@ -37,6 +37,9 @@ Public Class bookSearch
         Dim obj As New mainMenu
         obj.Show()
         Me.Hide()
+        obj.searchpanel.Visible = True
+        obj.managepanel.Visible = False
+        obj.librarypanel.Visible = False
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click

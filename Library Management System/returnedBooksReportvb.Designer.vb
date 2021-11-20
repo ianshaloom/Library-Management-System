@@ -31,17 +31,17 @@ Partial Class returnedBooksReportvb
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.exitt = New System.Windows.Forms.PictureBox()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.BooksDGV = New System.Windows.Forms.DataGridView()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.exitt = New System.Windows.Forms.PictureBox()
         Me.toolbar.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'toolbar
@@ -103,6 +103,28 @@ Partial Class returnedBooksReportvb
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
+        Me.PictureBox1.Location = New System.Drawing.Point(501, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
+        '
+        'exitt
+        '
+        Me.exitt.BackColor = System.Drawing.Color.Transparent
+        Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
+        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
+        Me.exitt.Location = New System.Drawing.Point(530, 0)
+        Me.exitt.Name = "exitt"
+        Me.exitt.Size = New System.Drawing.Size(29, 29)
+        Me.exitt.TabIndex = 25
+        Me.exitt.TabStop = False
+        '
         'PrintDocument1
         '
         '
@@ -134,28 +156,6 @@ Partial Class returnedBooksReportvb
         Me.BunifuDragControl1.TargetControl = Me.toolbar
         Me.BunifuDragControl1.Vertical = True
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
-        Me.PictureBox1.Location = New System.Drawing.Point(501, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
-        Me.PictureBox1.TabIndex = 26
-        Me.PictureBox1.TabStop = False
-        '
-        'exitt
-        '
-        Me.exitt.BackColor = System.Drawing.Color.Transparent
-        Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
-        Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
-        Me.exitt.Location = New System.Drawing.Point(530, 0)
-        Me.exitt.Name = "exitt"
-        Me.exitt.Size = New System.Drawing.Size(29, 29)
-        Me.exitt.TabIndex = 25
-        Me.exitt.TabStop = False
-        '
         'returnedBooksReportvb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -164,6 +164,7 @@ Partial Class returnedBooksReportvb
         Me.Controls.Add(Me.BooksDGV)
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "returnedBooksReportvb"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -172,9 +173,9 @@ Partial Class returnedBooksReportvb
         Me.toolbar.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BooksDGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

@@ -123,6 +123,9 @@ Partial Class incomereport
         Me.exitt.TabIndex = 25
         Me.exitt.TabStop = False
         '
+        'PrintDocument1
+        '
+        '
         'PrintPreviewDialog1
         '
         Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
@@ -152,7 +155,9 @@ Partial Class incomereport
         Me.Controls.Add(Me.BooksDGV)
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "incomereport"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "incomereport"
         Me.toolbar.ResumeLayout(False)
         Me.toolbar.PerformLayout()

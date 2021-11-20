@@ -95,6 +95,9 @@ Public Class borrowBook
         Dim obj As New mainMenu
         obj.Show()
         Me.Hide()
+        obj.searchpanel.Visible = False
+        obj.managepanel.Visible = False
+        obj.librarypanel.Visible = True
     End Sub
     Private Sub borrowBook_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisplayBook()

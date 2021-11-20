@@ -53,5 +53,4 @@ Public Class booksReport
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
-
 End Class

@@ -131,5 +131,8 @@ Public Class manageReaders
         Dim obj As New mainMenu
         obj.Show()
         Me.Hide()
+        obj.searchpanel.Visible = False
+        obj.managepanel.Visible = True
+        obj.librarypanel.Visible = False
     End Sub
 End Class

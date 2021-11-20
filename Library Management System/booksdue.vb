@@ -3,7 +3,7 @@ Public Class booksdue
     Dim con = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb")
     Private Sub DisplayBook()
         con.Open()
-        Dim query = "select * from BookTbl"
+        Dim query = "select * from Booksdue"
         Dim adapter As OleDbDataAdapter
         Dim cmd = New OleDbCommand(query, con)
         adapter = New OleDbDataAdapter(cmd)

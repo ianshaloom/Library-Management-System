@@ -86,19 +86,19 @@ Partial Class IssuedBooksReport
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.PrintToolStripMenuItem.Text = "Print"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'PictureBox1
@@ -122,6 +122,9 @@ Partial Class IssuedBooksReport
         Me.exitt.Size = New System.Drawing.Size(29, 29)
         Me.exitt.TabIndex = 25
         Me.exitt.TabStop = False
+        '
+        'PrintDocument1
+        '
         '
         'PrintPreviewDialog1
         '
@@ -152,7 +155,9 @@ Partial Class IssuedBooksReport
         Me.Controls.Add(Me.BooksDGV)
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "IssuedBooksReport"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "IssuedBooksReport"
         Me.toolbar.ResumeLayout(False)
         Me.toolbar.PerformLayout()

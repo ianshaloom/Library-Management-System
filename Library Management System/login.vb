@@ -7,17 +7,17 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If TextBox1.Text = "" And TextBox2.Text = "" Then
+        If Textbox1.Text = "" And Textbox2.Text = "" Then
             mainMenu.Show()
             Me.Hide()
-            TextBox1.Clear()
-            TextBox2.Clear()
-            TextBox1.Focus()
+            Textbox1.Text = ""
+            Textbox2.Text = ""
+            Textbox1.Focus()
         Else
             MsgBox("Sorry Incorrect Username and Password", MsgBoxStyle.OkOnly, "Invalid")
-            TextBox1.Clear()
-            TextBox2.Clear()
-            TextBox1.Focus()
+            Textbox1.Text = ""
+            Textbox2.Text = ""
+            Textbox1.Focus()
         End If
     End Sub
 End Class

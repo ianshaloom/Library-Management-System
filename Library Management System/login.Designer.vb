@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class logIn
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,21 +20,24 @@ Partial Class logIn
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(logIn))
         Me.toolbar = New System.Windows.Forms.Panel()
         Me.length = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.exitt = New System.Windows.Forms.PictureBox()
         Me.loginpanel = New System.Windows.Forms.Panel()
+        Me.Textbox2 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Textbox1 = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.passwrd = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.usernamee = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.iconn = New System.Windows.Forms.PictureBox()
+        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.toolbar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,7 +48,7 @@ Partial Class logIn
         '
         'toolbar
         '
-        Me.toolbar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
+        Me.toolbar.BackColor = System.Drawing.Color.Aqua
         Me.toolbar.Controls.Add(Me.length)
         Me.toolbar.Controls.Add(Me.PictureBox1)
         Me.toolbar.Controls.Add(Me.exitt)
@@ -53,7 +56,7 @@ Partial Class logIn
         Me.toolbar.Location = New System.Drawing.Point(0, 0)
         Me.toolbar.Name = "toolbar"
         Me.toolbar.Size = New System.Drawing.Size(658, 29)
-        Me.toolbar.TabIndex = 25
+        Me.toolbar.TabIndex = 4
         '
         'length
         '
@@ -90,15 +93,35 @@ Partial Class logIn
         'loginpanel
         '
         Me.loginpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.loginpanel.Controls.Add(Me.Textbox2)
         Me.loginpanel.Controls.Add(Me.Button1)
-        Me.loginpanel.Controls.Add(Me.TextBox2)
+        Me.loginpanel.Controls.Add(Me.Textbox1)
         Me.loginpanel.Controls.Add(Me.passwrd)
-        Me.loginpanel.Controls.Add(Me.TextBox1)
         Me.loginpanel.Controls.Add(Me.usernamee)
         Me.loginpanel.Location = New System.Drawing.Point(199, 128)
         Me.loginpanel.Name = "loginpanel"
         Me.loginpanel.Size = New System.Drawing.Size(256, 206)
         Me.loginpanel.TabIndex = 28
+        '
+        'Textbox2
+        '
+        Me.Textbox2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Textbox2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Textbox2.Font = New System.Drawing.Font("Century Gothic", 11.0!)
+        Me.Textbox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Textbox2.HintForeColor = System.Drawing.Color.Gray
+        Me.Textbox2.HintText = "password"
+        Me.Textbox2.isPassword = True
+        Me.Textbox2.LineFocusedColor = System.Drawing.Color.Red
+        Me.Textbox2.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Textbox2.LineMouseHoverColor = System.Drawing.Color.Aqua
+        Me.Textbox2.LineThickness = 4
+        Me.Textbox2.Location = New System.Drawing.Point(43, 100)
+        Me.Textbox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Textbox2.Name = "Textbox2"
+        Me.Textbox2.Size = New System.Drawing.Size(168, 39)
+        Me.Textbox2.TabIndex = 2
+        Me.Textbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Button1
         '
@@ -109,35 +132,40 @@ Partial Class logIn
         Me.Button1.Location = New System.Drawing.Point(32, 146)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(190, 40)
-        Me.Button1.TabIndex = 7
+        Me.Button1.TabIndex = 3
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'TextBox2
+        'Textbox1
         '
-        Me.TextBox2.Location = New System.Drawing.Point(32, 120)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox2.TabIndex = 6
+        Me.Textbox1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Textbox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Textbox1.Font = New System.Drawing.Font("Century Gothic", 11.0!)
+        Me.Textbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Textbox1.HintForeColor = System.Drawing.Color.Empty
+        Me.Textbox1.HintText = ""
+        Me.Textbox1.isPassword = False
+        Me.Textbox1.LineFocusedColor = System.Drawing.Color.Red
+        Me.Textbox1.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Textbox1.LineMouseHoverColor = System.Drawing.Color.Aqua
+        Me.Textbox1.LineThickness = 4
+        Me.Textbox1.Location = New System.Drawing.Point(43, 29)
+        Me.Textbox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Textbox1.Name = "Textbox1"
+        Me.Textbox1.Size = New System.Drawing.Size(168, 39)
+        Me.Textbox1.TabIndex = 1
+        Me.Textbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'passwrd
         '
         Me.passwrd.AutoSize = True
         Me.passwrd.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.passwrd.ForeColor = System.Drawing.Color.White
-        Me.passwrd.Location = New System.Drawing.Point(75, 82)
+        Me.passwrd.Location = New System.Drawing.Point(79, 72)
         Me.passwrd.Name = "passwrd"
         Me.passwrd.Size = New System.Drawing.Size(91, 20)
         Me.passwrd.TabIndex = 5
         Me.passwrd.Text = "Password"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(32, 47)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox1.TabIndex = 3
         '
         'usernamee
         '
@@ -168,6 +196,18 @@ Partial Class logIn
         Me.iconn.TabIndex = 4
         Me.iconn.TabStop = False
         '
+        'BunifuDragControl1
+        '
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Me.toolbar
+        Me.BunifuDragControl1.Vertical = True
+        '
+        'BunifuElipse1
+        '
+        Me.BunifuElipse1.ElipseRadius = 20
+        Me.BunifuElipse1.TargetControl = Me
+        '
         'logIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -179,6 +219,7 @@ Partial Class logIn
         Me.Controls.Add(Me.iconn)
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "logIn"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
@@ -199,11 +240,13 @@ Partial Class logIn
     Friend WithEvents exitt As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents loginpanel As Panel
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents passwrd As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents usernamee As Label
     Friend WithEvents iconn As PictureBox
     Friend WithEvents length As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
+    Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents Textbox1 As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents Textbox2 As Bunifu.Framework.UI.BunifuMaterialTextbox
 End Class

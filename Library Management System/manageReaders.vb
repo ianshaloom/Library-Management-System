@@ -8,7 +8,7 @@ Public Class manageReaders
     Dim ds As New OleDbDataAdapter
     Dim dt As New DataTable
 
-    Dim conn = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb")
+    Dim conn = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\DELL\Documents\LibraryVbDb.mdb")
     Private Sub DisplayBook()
         conn.Open()
         Dim query = "select * from StudentTbl"
@@ -29,7 +29,7 @@ Public Class manageReaders
 
         Else
 
-            pro = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb"
+            pro = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\DELL\Documents\LibraryVbDb.mdb"
             connstring = pro
             myconnection.ConnectionString = connstring
             myconnection.Open()

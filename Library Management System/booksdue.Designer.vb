@@ -22,6 +22,7 @@ Partial Class booksdue
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(booksdue))
         Me.toolbar = New System.Windows.Forms.Panel()
         Me.length = New System.Windows.Forms.Label()
@@ -35,6 +36,7 @@ Partial Class booksdue
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.BooksDGV = New System.Windows.Forms.DataGridView()
+        Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.toolbar.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,8 +53,9 @@ Partial Class booksdue
         Me.toolbar.Controls.Add(Me.exitt)
         Me.toolbar.Dock = System.Windows.Forms.DockStyle.Top
         Me.toolbar.Location = New System.Drawing.Point(0, 0)
+        Me.toolbar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.toolbar.Name = "toolbar"
-        Me.toolbar.Size = New System.Drawing.Size(559, 29)
+        Me.toolbar.Size = New System.Drawing.Size(745, 36)
         Me.toolbar.TabIndex = 45
         '
         'length
@@ -60,19 +63,22 @@ Partial Class booksdue
         Me.length.AutoSize = True
         Me.length.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.length.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.length.Location = New System.Drawing.Point(170, 6)
+        Me.length.Location = New System.Drawing.Point(88, 11)
+        Me.length.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.length.Name = "length"
-        Me.length.Size = New System.Drawing.Size(146, 17)
+        Me.length.Size = New System.Drawing.Size(175, 21)
         Me.length.TabIndex = 27
         Me.length.Text = "Books Due Report"
         '
         'MenuStrip1
         '
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(6, 3)
+        Me.MenuStrip1.Location = New System.Drawing.Point(8, 4)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(45, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(54, 28)
         Me.MenuStrip1.TabIndex = 45
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -80,25 +86,25 @@ Partial Class booksdue
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.PrintToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(115, 26)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(115, 26)
         Me.PrintToolStripMenuItem.Text = "Print"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(115, 26)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'PictureBox1
@@ -106,9 +112,10 @@ Partial Class booksdue
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
         Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
-        Me.PictureBox1.Location = New System.Drawing.Point(501, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(667, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
+        Me.PictureBox1.Size = New System.Drawing.Size(39, 36)
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
@@ -117,9 +124,10 @@ Partial Class booksdue
         Me.exitt.BackColor = System.Drawing.Color.Transparent
         Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
         Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
-        Me.exitt.Location = New System.Drawing.Point(530, 0)
+        Me.exitt.Location = New System.Drawing.Point(706, 0)
+        Me.exitt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.exitt.Name = "exitt"
-        Me.exitt.Size = New System.Drawing.Size(29, 29)
+        Me.exitt.Size = New System.Drawing.Size(39, 36)
         Me.exitt.TabIndex = 25
         Me.exitt.TabStop = False
         '
@@ -142,20 +150,29 @@ Partial Class booksdue
         Me.BooksDGV.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(220, Byte), Integer))
         Me.BooksDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BooksDGV.GridColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BooksDGV.Location = New System.Drawing.Point(12, 40)
+        Me.BooksDGV.Location = New System.Drawing.Point(16, 49)
+        Me.BooksDGV.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BooksDGV.Name = "BooksDGV"
-        Me.BooksDGV.Size = New System.Drawing.Size(535, 488)
+        Me.BooksDGV.Size = New System.Drawing.Size(713, 601)
         Me.BooksDGV.TabIndex = 49
+        '
+        'BunifuDragControl1
+        '
+        Me.BunifuDragControl1.Fixed = True
+        Me.BunifuDragControl1.Horizontal = True
+        Me.BunifuDragControl1.TargetControl = Nothing
+        Me.BunifuDragControl1.Vertical = True
         '
         'booksdue
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(559, 545)
+        Me.ClientSize = New System.Drawing.Size(745, 671)
         Me.Controls.Add(Me.BooksDGV)
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "booksdue"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "booksdue"
@@ -182,4 +199,5 @@ Partial Class booksdue
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents BooksDGV As DataGridView
+    Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
 End Class

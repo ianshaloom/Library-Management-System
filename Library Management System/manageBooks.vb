@@ -8,7 +8,7 @@ Public Class manageBooks
     Dim con As New OleDbConnection
     Dim dt As New DataTable
 
-    Dim conn = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb")
+    Dim conn = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\DELL\Documents\LibraryVbDb.mdb")
     Private Sub DisplayBook()
         conn.Open()
         Dim query = "select * from BookTbl"
@@ -36,7 +36,7 @@ Public Class manageBooks
         If BNameTb.Text = "" Or BAuthorTb.Text = "" Or BPublisherTb.Text = "" Or BPriceTb.Text = "" Or BQuantityTb.Text = "" Then
             MsgBox("Missing Information")
         Else
-            pro = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb"
+            pro = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\DELL\Documents\LibraryVbDb.mdb"
             connstring = pro
             myconnection.ConnectionString = connstring
             myconnection.Open()

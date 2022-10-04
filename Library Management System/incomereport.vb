@@ -1,7 +1,7 @@
 ﻿Imports System.Data.OleDb
 Public Class incomereport
 
-    Dim con = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Theemain\Documents\LibraryVbDb.mdb")
+    Dim con = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\DELL\Documents\LibraryVbDb.mdb")
     Private Sub DisplayBook()
         con.Open()
         Dim query = "select * from Income"

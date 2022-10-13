@@ -65,6 +65,7 @@ Partial Class mainMenu
         Me.issuedreport = New Bunifu.Framework.UI.BunifuImageButton()
         Me.readersreport = New Bunifu.Framework.UI.BunifuImageButton()
         Me.booksreport = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.toolbar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,8 +99,9 @@ Partial Class mainMenu
         Me.toolbar.Controls.Add(Me.exitt)
         Me.toolbar.Dock = System.Windows.Forms.DockStyle.Top
         Me.toolbar.Location = New System.Drawing.Point(0, 0)
+        Me.toolbar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.toolbar.Name = "toolbar"
-        Me.toolbar.Size = New System.Drawing.Size(937, 29)
+        Me.toolbar.Size = New System.Drawing.Size(1249, 36)
         Me.toolbar.TabIndex = 26
         '
         'length
@@ -107,9 +109,10 @@ Partial Class mainMenu
         Me.length.AutoSize = True
         Me.length.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.length.ForeColor = System.Drawing.Color.Black
-        Me.length.Location = New System.Drawing.Point(73, 5)
+        Me.length.Location = New System.Drawing.Point(97, 6)
+        Me.length.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.length.Name = "length"
-        Me.length.Size = New System.Drawing.Size(111, 20)
+        Me.length.Size = New System.Drawing.Size(134, 23)
         Me.length.TabIndex = 27
         Me.length.Text = "MAIN MENU"
         '
@@ -118,9 +121,10 @@ Partial Class mainMenu
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
         Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
-        Me.PictureBox1.Location = New System.Drawing.Point(879, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(1171, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(29, 29)
+        Me.PictureBox1.Size = New System.Drawing.Size(39, 36)
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
@@ -129,9 +133,10 @@ Partial Class mainMenu
         Me.exitt.BackColor = System.Drawing.Color.Transparent
         Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
         Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
-        Me.exitt.Location = New System.Drawing.Point(908, 0)
+        Me.exitt.Location = New System.Drawing.Point(1210, 0)
+        Me.exitt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.exitt.Name = "exitt"
-        Me.exitt.Size = New System.Drawing.Size(29, 29)
+        Me.exitt.Size = New System.Drawing.Size(39, 36)
         Me.exitt.TabIndex = 25
         Me.exitt.TabStop = False
         '
@@ -143,9 +148,10 @@ Partial Class mainMenu
         Me.sidepanel.Controls.Add(Me.libraryBtn)
         Me.sidepanel.Controls.Add(Me.reportsBtn)
         Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
-        Me.sidepanel.Location = New System.Drawing.Point(0, 29)
+        Me.sidepanel.Location = New System.Drawing.Point(0, 36)
+        Me.sidepanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.sidepanel.Name = "sidepanel"
-        Me.sidepanel.Size = New System.Drawing.Size(269, 376)
+        Me.sidepanel.Size = New System.Drawing.Size(357, 462)
         Me.sidepanel.TabIndex = 27
         '
         'searchBtn
@@ -155,9 +161,10 @@ Partial Class mainMenu
         Me.searchBtn.ForeColor = System.Drawing.Color.White
         Me.searchBtn.Image = Global.Library_Management_System.My.Resources.Resources.search_paper
         Me.searchBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.searchBtn.Location = New System.Drawing.Point(-2, 0)
+        Me.searchBtn.Location = New System.Drawing.Point(-3, 0)
+        Me.searchBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.searchBtn.Name = "searchBtn"
-        Me.searchBtn.Size = New System.Drawing.Size(269, 93)
+        Me.searchBtn.Size = New System.Drawing.Size(359, 114)
         Me.searchBtn.TabIndex = 45
         Me.searchBtn.Text = "Search"
         Me.searchBtn.UseVisualStyleBackColor = True
@@ -169,9 +176,10 @@ Partial Class mainMenu
         Me.manageBtn.ForeColor = System.Drawing.Color.White
         Me.manageBtn.Image = CType(resources.GetObject("manageBtn.Image"), System.Drawing.Image)
         Me.manageBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.manageBtn.Location = New System.Drawing.Point(-2, 93)
+        Me.manageBtn.Location = New System.Drawing.Point(-3, 114)
+        Me.manageBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.manageBtn.Name = "manageBtn"
-        Me.manageBtn.Size = New System.Drawing.Size(269, 93)
+        Me.manageBtn.Size = New System.Drawing.Size(359, 114)
         Me.manageBtn.TabIndex = 44
         Me.manageBtn.Text = "Register"
         Me.manageBtn.UseVisualStyleBackColor = True
@@ -183,9 +191,10 @@ Partial Class mainMenu
         Me.libraryBtn.ForeColor = System.Drawing.Color.White
         Me.libraryBtn.Image = Global.Library_Management_System.My.Resources.Resources.bookshelf
         Me.libraryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.libraryBtn.Location = New System.Drawing.Point(-2, 186)
+        Me.libraryBtn.Location = New System.Drawing.Point(-3, 229)
+        Me.libraryBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.libraryBtn.Name = "libraryBtn"
-        Me.libraryBtn.Size = New System.Drawing.Size(269, 93)
+        Me.libraryBtn.Size = New System.Drawing.Size(359, 114)
         Me.libraryBtn.TabIndex = 43
         Me.libraryBtn.Text = "Library"
         Me.libraryBtn.UseVisualStyleBackColor = True
@@ -197,9 +206,10 @@ Partial Class mainMenu
         Me.reportsBtn.ForeColor = System.Drawing.Color.White
         Me.reportsBtn.Image = Global.Library_Management_System.My.Resources.Resources.reports
         Me.reportsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.reportsBtn.Location = New System.Drawing.Point(-2, 279)
+        Me.reportsBtn.Location = New System.Drawing.Point(-3, 343)
+        Me.reportsBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.reportsBtn.Name = "reportsBtn"
-        Me.reportsBtn.Size = New System.Drawing.Size(269, 93)
+        Me.reportsBtn.Size = New System.Drawing.Size(359, 114)
         Me.reportsBtn.TabIndex = 42
         Me.reportsBtn.Text = "Reports"
         Me.reportsBtn.UseVisualStyleBackColor = True
@@ -214,66 +224,72 @@ Partial Class mainMenu
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(346, 171)
+        Me.Label7.Location = New System.Drawing.Point(461, 210)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(99, 20)
+        Me.Label7.Size = New System.Drawing.Size(123, 24)
         Me.Label7.TabIndex = 54
         Me.Label7.Text = "Books Report"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(551, 171)
+        Me.Label8.Location = New System.Drawing.Point(735, 210)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(113, 20)
+        Me.Label8.Size = New System.Drawing.Size(142, 24)
         Me.Label8.TabIndex = 55
         Me.Label8.Text = "Readers Report"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(760, 171)
+        Me.Label9.Location = New System.Drawing.Point(1013, 210)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(98, 40)
+        Me.Label9.Size = New System.Drawing.Size(122, 48)
         Me.Label9.TabIndex = 56
         Me.Label9.Text = "Issued Books" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "     Report"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(760, 347)
+        Me.Label10.Location = New System.Drawing.Point(1013, 427)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(105, 20)
+        Me.Label10.Size = New System.Drawing.Size(134, 24)
         Me.Label10.TabIndex = 59
         Me.Label10.Text = "Income Report"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(551, 347)
+        Me.Label11.Location = New System.Drawing.Point(735, 427)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(82, 40)
+        Me.Label11.Size = New System.Drawing.Size(102, 48)
         Me.Label11.TabIndex = 58
         Me.Label11.Text = "Books Due" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "   Report"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Arial Unicode MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(346, 347)
+        Me.Label12.Location = New System.Drawing.Point(461, 427)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(115, 40)
+        Me.Label12.Size = New System.Drawing.Size(145, 48)
         Me.Label12.TabIndex = 57
         Me.Label12.Text = "Returned Books" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "       Report"
         '
@@ -281,6 +297,7 @@ Partial Class mainMenu
         '
         Me.searchpanel.BackgroundImage = CType(resources.GetObject("searchpanel.BackgroundImage"), System.Drawing.Image)
         Me.searchpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.searchpanel.Controls.Add(Me.BunifuCustomLabel1)
         Me.searchpanel.Controls.Add(Me.SearchReader)
         Me.searchpanel.Controls.Add(Me.Label6)
         Me.searchpanel.Controls.Add(Me.SearchBook)
@@ -289,10 +306,11 @@ Partial Class mainMenu
         Me.searchpanel.GradientBottomRight = System.Drawing.Color.Navy
         Me.searchpanel.GradientTopLeft = System.Drawing.Color.Cyan
         Me.searchpanel.GradientTopRight = System.Drawing.Color.Cyan
-        Me.searchpanel.Location = New System.Drawing.Point(274, 33)
+        Me.searchpanel.Location = New System.Drawing.Point(365, 41)
+        Me.searchpanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.searchpanel.Name = "searchpanel"
         Me.searchpanel.Quality = 10
-        Me.searchpanel.Size = New System.Drawing.Size(656, 366)
+        Me.searchpanel.Size = New System.Drawing.Size(875, 450)
         Me.searchpanel.TabIndex = 46
         '
         'SearchReader
@@ -300,9 +318,11 @@ Partial Class mainMenu
         Me.SearchReader.BackColor = System.Drawing.Color.Transparent
         Me.SearchReader.Image = CType(resources.GetObject("SearchReader.Image"), System.Drawing.Image)
         Me.SearchReader.ImageActive = Nothing
-        Me.SearchReader.Location = New System.Drawing.Point(400, 90)
+        Me.SearchReader.Location = New System.Drawing.Point(533, 111)
+        Me.SearchReader.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SearchReader.Name = "SearchReader"
-        Me.SearchReader.Size = New System.Drawing.Size(150, 150)
+        Me.SearchReader.Size = New System.Drawing.Size(200, 185)
+        Me.SearchReader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.SearchReader.TabIndex = 48
         Me.SearchReader.TabStop = False
         Me.SearchReader.Zoom = 10
@@ -313,9 +333,10 @@ Partial Class mainMenu
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(413, 251)
+        Me.Label6.Location = New System.Drawing.Point(551, 309)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(119, 17)
+        Me.Label6.Size = New System.Drawing.Size(142, 21)
         Me.Label6.TabIndex = 49
         Me.Label6.Text = "Search Reader"
         '
@@ -324,9 +345,10 @@ Partial Class mainMenu
         Me.SearchBook.BackColor = System.Drawing.Color.Transparent
         Me.SearchBook.Image = CType(resources.GetObject("SearchBook.Image"), System.Drawing.Image)
         Me.SearchBook.ImageActive = Nothing
-        Me.SearchBook.Location = New System.Drawing.Point(90, 90)
+        Me.SearchBook.Location = New System.Drawing.Point(120, 111)
+        Me.SearchBook.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SearchBook.Name = "SearchBook"
-        Me.SearchBook.Size = New System.Drawing.Size(150, 150)
+        Me.SearchBook.Size = New System.Drawing.Size(200, 185)
         Me.SearchBook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.SearchBook.TabIndex = 46
         Me.SearchBook.TabStop = False
@@ -338,9 +360,10 @@ Partial Class mainMenu
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(99, 251)
+        Me.Label5.Location = New System.Drawing.Point(132, 309)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(103, 17)
+        Me.Label5.Size = New System.Drawing.Size(123, 21)
         Me.Label5.TabIndex = 47
         Me.Label5.Text = "Search Book"
         '
@@ -354,10 +377,11 @@ Partial Class mainMenu
         Me.librarypanel.GradientBottomRight = System.Drawing.Color.Navy
         Me.librarypanel.GradientTopLeft = System.Drawing.Color.Cyan
         Me.librarypanel.GradientTopRight = System.Drawing.Color.Cyan
-        Me.librarypanel.Location = New System.Drawing.Point(274, 33)
+        Me.librarypanel.Location = New System.Drawing.Point(365, 41)
+        Me.librarypanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.librarypanel.Name = "librarypanel"
         Me.librarypanel.Quality = 10
-        Me.librarypanel.Size = New System.Drawing.Size(656, 366)
+        Me.librarypanel.Size = New System.Drawing.Size(875, 450)
         Me.librarypanel.TabIndex = 47
         '
         'Panel2
@@ -365,9 +389,10 @@ Partial Class mainMenu
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.Controls.Add(Me.BunifuImageButton1)
         Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(400, 90)
+        Me.Panel2.Location = New System.Drawing.Point(533, 111)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(166, 188)
+        Me.Panel2.Size = New System.Drawing.Size(221, 231)
         Me.Panel2.TabIndex = 45
         '
         'BunifuImageButton1
@@ -375,9 +400,10 @@ Partial Class mainMenu
         Me.BunifuImageButton1.BackColor = System.Drawing.Color.Transparent
         Me.BunifuImageButton1.Image = Global.Library_Management_System.My.Resources.Resources.returnn
         Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(7, 8)
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(9, 10)
+        Me.BunifuImageButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(150, 150)
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(200, 185)
         Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuImageButton1.TabIndex = 48
         Me.BunifuImageButton1.TabStop = False
@@ -388,9 +414,10 @@ Partial Class mainMenu
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(17, 167)
+        Me.Label1.Location = New System.Drawing.Point(23, 206)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(103, 17)
+        Me.Label1.Size = New System.Drawing.Size(122, 21)
         Me.Label1.TabIndex = 36
         Me.Label1.Text = "Return Book"
         '
@@ -399,9 +426,10 @@ Partial Class mainMenu
         Me.Panel3.BackColor = System.Drawing.Color.Transparent
         Me.Panel3.Controls.Add(Me.BunifuImageButton2)
         Me.Panel3.Controls.Add(Me.Label2)
-        Me.Panel3.Location = New System.Drawing.Point(90, 90)
+        Me.Panel3.Location = New System.Drawing.Point(120, 111)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(166, 188)
+        Me.Panel3.Size = New System.Drawing.Size(221, 231)
         Me.Panel3.TabIndex = 45
         '
         'BunifuImageButton2
@@ -409,9 +437,10 @@ Partial Class mainMenu
         Me.BunifuImageButton2.BackColor = System.Drawing.Color.Transparent
         Me.BunifuImageButton2.Image = Global.Library_Management_System.My.Resources.Resources.issue
         Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(7, 8)
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(9, 10)
+        Me.BunifuImageButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BunifuImageButton2.Name = "BunifuImageButton2"
-        Me.BunifuImageButton2.Size = New System.Drawing.Size(150, 150)
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(200, 185)
         Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuImageButton2.TabIndex = 46
         Me.BunifuImageButton2.TabStop = False
@@ -422,9 +451,10 @@ Partial Class mainMenu
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(21, 166)
+        Me.Label2.Location = New System.Drawing.Point(28, 204)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 17)
+        Me.Label2.Size = New System.Drawing.Size(108, 21)
         Me.Label2.TabIndex = 34
         Me.Label2.Text = "Issue Book"
         '
@@ -438,10 +468,11 @@ Partial Class mainMenu
         Me.managepanel.GradientBottomRight = System.Drawing.Color.MidnightBlue
         Me.managepanel.GradientTopLeft = System.Drawing.Color.Cyan
         Me.managepanel.GradientTopRight = System.Drawing.Color.Cyan
-        Me.managepanel.Location = New System.Drawing.Point(274, 33)
+        Me.managepanel.Location = New System.Drawing.Point(365, 41)
+        Me.managepanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.managepanel.Name = "managepanel"
         Me.managepanel.Quality = 10
-        Me.managepanel.Size = New System.Drawing.Size(656, 366)
+        Me.managepanel.Size = New System.Drawing.Size(875, 450)
         Me.managepanel.TabIndex = 47
         '
         'Panel4
@@ -449,9 +480,10 @@ Partial Class mainMenu
         Me.Panel4.BackColor = System.Drawing.Color.Transparent
         Me.Panel4.Controls.Add(Me.userregister)
         Me.Panel4.Controls.Add(Me.Label3)
-        Me.Panel4.Location = New System.Drawing.Point(400, 90)
+        Me.Panel4.Location = New System.Drawing.Point(533, 111)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(166, 188)
+        Me.Panel4.Size = New System.Drawing.Size(221, 231)
         Me.Panel4.TabIndex = 45
         '
         'userregister
@@ -459,9 +491,10 @@ Partial Class mainMenu
         Me.userregister.BackColor = System.Drawing.Color.Transparent
         Me.userregister.Image = CType(resources.GetObject("userregister.Image"), System.Drawing.Image)
         Me.userregister.ImageActive = Nothing
-        Me.userregister.Location = New System.Drawing.Point(7, 8)
+        Me.userregister.Location = New System.Drawing.Point(9, 10)
+        Me.userregister.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.userregister.Name = "userregister"
-        Me.userregister.Size = New System.Drawing.Size(150, 150)
+        Me.userregister.Size = New System.Drawing.Size(200, 185)
         Me.userregister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.userregister.TabIndex = 48
         Me.userregister.TabStop = False
@@ -472,9 +505,10 @@ Partial Class mainMenu
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(17, 167)
+        Me.Label3.Location = New System.Drawing.Point(23, 206)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(131, 17)
+        Me.Label3.Size = New System.Drawing.Size(157, 21)
         Me.Label3.TabIndex = 36
         Me.Label3.Text = "Register Reader"
         '
@@ -483,9 +517,10 @@ Partial Class mainMenu
         Me.Panel5.BackColor = System.Drawing.Color.Transparent
         Me.Panel5.Controls.Add(Me.bookregister)
         Me.Panel5.Controls.Add(Me.Label4)
-        Me.Panel5.Location = New System.Drawing.Point(90, 90)
+        Me.Panel5.Location = New System.Drawing.Point(120, 111)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(166, 188)
+        Me.Panel5.Size = New System.Drawing.Size(221, 231)
         Me.Panel5.TabIndex = 45
         '
         'bookregister
@@ -493,9 +528,10 @@ Partial Class mainMenu
         Me.bookregister.BackColor = System.Drawing.Color.Transparent
         Me.bookregister.Image = Global.Library_Management_System.My.Resources.Resources.book
         Me.bookregister.ImageActive = Nothing
-        Me.bookregister.Location = New System.Drawing.Point(7, 8)
+        Me.bookregister.Location = New System.Drawing.Point(9, 10)
+        Me.bookregister.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bookregister.Name = "bookregister"
-        Me.bookregister.Size = New System.Drawing.Size(150, 150)
+        Me.bookregister.Size = New System.Drawing.Size(200, 185)
         Me.bookregister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.bookregister.TabIndex = 46
         Me.bookregister.TabStop = False
@@ -506,9 +542,10 @@ Partial Class mainMenu
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Lucida Sans Unicode", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(21, 166)
+        Me.Label4.Location = New System.Drawing.Point(28, 204)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(115, 17)
+        Me.Label4.Size = New System.Drawing.Size(138, 21)
         Me.Label4.TabIndex = 34
         Me.Label4.Text = "Register Book"
         '
@@ -517,9 +554,10 @@ Partial Class mainMenu
         Me.incomereport.BackColor = System.Drawing.Color.Transparent
         Me.incomereport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.incomereport.ImageActive = Nothing
-        Me.incomereport.Location = New System.Drawing.Point(761, 235)
+        Me.incomereport.Location = New System.Drawing.Point(1015, 289)
+        Me.incomereport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.incomereport.Name = "incomereport"
-        Me.incomereport.Size = New System.Drawing.Size(96, 96)
+        Me.incomereport.Size = New System.Drawing.Size(128, 118)
         Me.incomereport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.incomereport.TabIndex = 53
         Me.incomereport.TabStop = False
@@ -530,9 +568,10 @@ Partial Class mainMenu
         Me.duereport.BackColor = System.Drawing.Color.Transparent
         Me.duereport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.duereport.ImageActive = Nothing
-        Me.duereport.Location = New System.Drawing.Point(552, 235)
+        Me.duereport.Location = New System.Drawing.Point(736, 289)
+        Me.duereport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.duereport.Name = "duereport"
-        Me.duereport.Size = New System.Drawing.Size(96, 96)
+        Me.duereport.Size = New System.Drawing.Size(128, 118)
         Me.duereport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.duereport.TabIndex = 52
         Me.duereport.TabStop = False
@@ -543,9 +582,10 @@ Partial Class mainMenu
         Me.returnedreport.BackColor = System.Drawing.Color.Transparent
         Me.returnedreport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.returnedreport.ImageActive = Nothing
-        Me.returnedreport.Location = New System.Drawing.Point(347, 235)
+        Me.returnedreport.Location = New System.Drawing.Point(463, 289)
+        Me.returnedreport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.returnedreport.Name = "returnedreport"
-        Me.returnedreport.Size = New System.Drawing.Size(96, 96)
+        Me.returnedreport.Size = New System.Drawing.Size(128, 118)
         Me.returnedreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.returnedreport.TabIndex = 51
         Me.returnedreport.TabStop = False
@@ -556,9 +596,10 @@ Partial Class mainMenu
         Me.issuedreport.BackColor = System.Drawing.Color.Transparent
         Me.issuedreport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.issuedreport.ImageActive = Nothing
-        Me.issuedreport.Location = New System.Drawing.Point(763, 63)
+        Me.issuedreport.Location = New System.Drawing.Point(1017, 78)
+        Me.issuedreport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.issuedreport.Name = "issuedreport"
-        Me.issuedreport.Size = New System.Drawing.Size(96, 96)
+        Me.issuedreport.Size = New System.Drawing.Size(128, 118)
         Me.issuedreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.issuedreport.TabIndex = 50
         Me.issuedreport.TabStop = False
@@ -569,9 +610,10 @@ Partial Class mainMenu
         Me.readersreport.BackColor = System.Drawing.Color.Transparent
         Me.readersreport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.readersreport.ImageActive = Nothing
-        Me.readersreport.Location = New System.Drawing.Point(554, 63)
+        Me.readersreport.Location = New System.Drawing.Point(739, 78)
+        Me.readersreport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.readersreport.Name = "readersreport"
-        Me.readersreport.Size = New System.Drawing.Size(96, 96)
+        Me.readersreport.Size = New System.Drawing.Size(128, 118)
         Me.readersreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.readersreport.TabIndex = 49
         Me.readersreport.TabStop = False
@@ -582,20 +624,33 @@ Partial Class mainMenu
         Me.booksreport.BackColor = System.Drawing.Color.Transparent
         Me.booksreport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.booksreport.ImageActive = Nothing
-        Me.booksreport.Location = New System.Drawing.Point(349, 63)
+        Me.booksreport.Location = New System.Drawing.Point(465, 78)
+        Me.booksreport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.booksreport.Name = "booksreport"
-        Me.booksreport.Size = New System.Drawing.Size(96, 96)
+        Me.booksreport.Size = New System.Drawing.Size(128, 118)
         Me.booksreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.booksreport.TabIndex = 48
         Me.booksreport.TabStop = False
         Me.booksreport.Zoom = 10
         '
+        'BunifuCustomLabel1
+        '
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Lucida Sans Unicode", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.Black
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(306, 54)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(206, 34)
+        Me.BunifuCustomLabel1.TabIndex = 50
+        Me.BunifuCustomLabel1.Text = "Search Reader"
+        '
         'mainMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(937, 405)
+        Me.ClientSize = New System.Drawing.Size(1249, 498)
         Me.Controls.Add(Me.searchpanel)
         Me.Controls.Add(Me.librarypanel)
         Me.Controls.Add(Me.managepanel)
@@ -615,6 +670,7 @@ Partial Class mainMenu
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "mainMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -693,4 +749,5 @@ Partial Class mainMenu
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
+    Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
 End Class

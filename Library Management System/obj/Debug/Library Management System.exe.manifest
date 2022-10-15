@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kFT3UzEGTyPWfegg1DhkJZBXVaplETxmOCV7ViABGmU=</dsig:DigestValue>
+        <dsig:DigestValue>v+YzDm9/JMr6nGtXz2EPGSi7X/V1Ru3JHZvugNASbbo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -90,13 +90,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Library Management System.exe.config" size="794">
+  <file name="Library Management System.exe.config" size="895">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ooxfjReDo/Q9H6RoyrZ0qu10gobmwRuQRKilKSgdmMQ=</dsig:DigestValue>
+      <dsig:DigestValue>EVF2LgcNmw4mskYF6nydsptXLhmVWHUwKr1xGcu8pBs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\bookshelf.ico" size="6621">
@@ -119,9 +119,9 @@
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
-      <!-- A list of the Windows versions that this application has been tested on and is
-           is designed to work with. Uncomment the appropriate elements and Windows will 
-           automatically selected the most compatible environment. -->
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
       <!-- Windows Vista -->
       <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
       <!-- Windows 7 -->
@@ -134,4 +134,10 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>
+      <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
+    </windowsSettings>
+  </application>
 </asmv1:assembly>

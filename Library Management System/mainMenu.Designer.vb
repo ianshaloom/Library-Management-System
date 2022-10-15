@@ -29,10 +29,10 @@ Partial Class mainMenu
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.exitt = New System.Windows.Forms.PictureBox()
         Me.sidepanel = New System.Windows.Forms.Panel()
-        Me.searchBtn = New System.Windows.Forms.Button()
         Me.manageBtn = New System.Windows.Forms.Button()
         Me.libraryBtn = New System.Windows.Forms.Button()
         Me.reportsBtn = New System.Windows.Forms.Button()
+        Me.searchBtn = New System.Windows.Forms.Button()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -41,6 +41,7 @@ Partial Class mainMenu
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.searchpanel = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.SearchReader = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.SearchBook = New Bunifu.Framework.UI.BunifuImageButton()
@@ -65,7 +66,6 @@ Partial Class mainMenu
         Me.issuedreport = New Bunifu.Framework.UI.BunifuImageButton()
         Me.readersreport = New Bunifu.Framework.UI.BunifuImageButton()
         Me.booksreport = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.toolbar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.exitt, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,7 +99,7 @@ Partial Class mainMenu
         Me.toolbar.Controls.Add(Me.exitt)
         Me.toolbar.Dock = System.Windows.Forms.DockStyle.Top
         Me.toolbar.Location = New System.Drawing.Point(0, 0)
-        Me.toolbar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.toolbar.Margin = New System.Windows.Forms.Padding(4)
         Me.toolbar.Name = "toolbar"
         Me.toolbar.Size = New System.Drawing.Size(1249, 36)
         Me.toolbar.TabIndex = 26
@@ -122,7 +122,7 @@ Partial Class mainMenu
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
         Me.PictureBox1.Image = Global.Library_Management_System.My.Resources.Resources.dash
         Me.PictureBox1.Location = New System.Drawing.Point(1171, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(39, 36)
         Me.PictureBox1.TabIndex = 26
@@ -134,7 +134,7 @@ Partial Class mainMenu
         Me.exitt.Dock = System.Windows.Forms.DockStyle.Right
         Me.exitt.Image = Global.Library_Management_System.My.Resources.Resources.exitt
         Me.exitt.Location = New System.Drawing.Point(1210, 0)
-        Me.exitt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.exitt.Margin = New System.Windows.Forms.Padding(4)
         Me.exitt.Name = "exitt"
         Me.exitt.Size = New System.Drawing.Size(39, 36)
         Me.exitt.TabIndex = 25
@@ -149,25 +149,10 @@ Partial Class mainMenu
         Me.sidepanel.Controls.Add(Me.reportsBtn)
         Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidepanel.Location = New System.Drawing.Point(0, 36)
-        Me.sidepanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.sidepanel.Margin = New System.Windows.Forms.Padding(4)
         Me.sidepanel.Name = "sidepanel"
         Me.sidepanel.Size = New System.Drawing.Size(357, 462)
         Me.sidepanel.TabIndex = 27
-        '
-        'searchBtn
-        '
-        Me.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.searchBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchBtn.ForeColor = System.Drawing.Color.White
-        Me.searchBtn.Image = Global.Library_Management_System.My.Resources.Resources.search_paper
-        Me.searchBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.searchBtn.Location = New System.Drawing.Point(-3, 0)
-        Me.searchBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.searchBtn.Name = "searchBtn"
-        Me.searchBtn.Size = New System.Drawing.Size(359, 114)
-        Me.searchBtn.TabIndex = 45
-        Me.searchBtn.Text = "Search"
-        Me.searchBtn.UseVisualStyleBackColor = True
         '
         'manageBtn
         '
@@ -177,7 +162,7 @@ Partial Class mainMenu
         Me.manageBtn.Image = CType(resources.GetObject("manageBtn.Image"), System.Drawing.Image)
         Me.manageBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.manageBtn.Location = New System.Drawing.Point(-3, 114)
-        Me.manageBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.manageBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.manageBtn.Name = "manageBtn"
         Me.manageBtn.Size = New System.Drawing.Size(359, 114)
         Me.manageBtn.TabIndex = 44
@@ -192,7 +177,7 @@ Partial Class mainMenu
         Me.libraryBtn.Image = Global.Library_Management_System.My.Resources.Resources.bookshelf
         Me.libraryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.libraryBtn.Location = New System.Drawing.Point(-3, 229)
-        Me.libraryBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.libraryBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.libraryBtn.Name = "libraryBtn"
         Me.libraryBtn.Size = New System.Drawing.Size(359, 114)
         Me.libraryBtn.TabIndex = 43
@@ -207,12 +192,27 @@ Partial Class mainMenu
         Me.reportsBtn.Image = Global.Library_Management_System.My.Resources.Resources.reports
         Me.reportsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.reportsBtn.Location = New System.Drawing.Point(-3, 343)
-        Me.reportsBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.reportsBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.reportsBtn.Name = "reportsBtn"
         Me.reportsBtn.Size = New System.Drawing.Size(359, 114)
         Me.reportsBtn.TabIndex = 42
         Me.reportsBtn.Text = "Reports"
         Me.reportsBtn.UseVisualStyleBackColor = True
+        '
+        'searchBtn
+        '
+        Me.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.searchBtn.Font = New System.Drawing.Font("Lucida Sans Unicode", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchBtn.ForeColor = System.Drawing.Color.White
+        Me.searchBtn.Image = Global.Library_Management_System.My.Resources.Resources.search_paper
+        Me.searchBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.searchBtn.Location = New System.Drawing.Point(-2, -2)
+        Me.searchBtn.Margin = New System.Windows.Forms.Padding(4)
+        Me.searchBtn.Name = "searchBtn"
+        Me.searchBtn.Size = New System.Drawing.Size(359, 114)
+        Me.searchBtn.TabIndex = 45
+        Me.searchBtn.Text = "Search"
+        Me.searchBtn.UseVisualStyleBackColor = True
         '
         'BunifuDragControl1
         '
@@ -307,11 +307,23 @@ Partial Class mainMenu
         Me.searchpanel.GradientTopLeft = System.Drawing.Color.Cyan
         Me.searchpanel.GradientTopRight = System.Drawing.Color.Cyan
         Me.searchpanel.Location = New System.Drawing.Point(365, 41)
-        Me.searchpanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.searchpanel.Margin = New System.Windows.Forms.Padding(4)
         Me.searchpanel.Name = "searchpanel"
         Me.searchpanel.Quality = 10
         Me.searchpanel.Size = New System.Drawing.Size(875, 450)
         Me.searchpanel.TabIndex = 46
+        '
+        'BunifuCustomLabel1
+        '
+        Me.BunifuCustomLabel1.AutoSize = True
+        Me.BunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Lucida Sans Unicode", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.Black
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(306, 54)
+        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(206, 34)
+        Me.BunifuCustomLabel1.TabIndex = 50
+        Me.BunifuCustomLabel1.Text = "Search Reader"
         '
         'SearchReader
         '
@@ -319,7 +331,7 @@ Partial Class mainMenu
         Me.SearchReader.Image = CType(resources.GetObject("SearchReader.Image"), System.Drawing.Image)
         Me.SearchReader.ImageActive = Nothing
         Me.SearchReader.Location = New System.Drawing.Point(533, 111)
-        Me.SearchReader.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SearchReader.Margin = New System.Windows.Forms.Padding(4)
         Me.SearchReader.Name = "SearchReader"
         Me.SearchReader.Size = New System.Drawing.Size(200, 185)
         Me.SearchReader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -346,7 +358,7 @@ Partial Class mainMenu
         Me.SearchBook.Image = CType(resources.GetObject("SearchBook.Image"), System.Drawing.Image)
         Me.SearchBook.ImageActive = Nothing
         Me.SearchBook.Location = New System.Drawing.Point(120, 111)
-        Me.SearchBook.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SearchBook.Margin = New System.Windows.Forms.Padding(4)
         Me.SearchBook.Name = "SearchBook"
         Me.SearchBook.Size = New System.Drawing.Size(200, 185)
         Me.SearchBook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -378,7 +390,7 @@ Partial Class mainMenu
         Me.librarypanel.GradientTopLeft = System.Drawing.Color.Cyan
         Me.librarypanel.GradientTopRight = System.Drawing.Color.Cyan
         Me.librarypanel.Location = New System.Drawing.Point(365, 41)
-        Me.librarypanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.librarypanel.Margin = New System.Windows.Forms.Padding(4)
         Me.librarypanel.Name = "librarypanel"
         Me.librarypanel.Quality = 10
         Me.librarypanel.Size = New System.Drawing.Size(875, 450)
@@ -390,7 +402,7 @@ Partial Class mainMenu
         Me.Panel2.Controls.Add(Me.BunifuImageButton1)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Location = New System.Drawing.Point(533, 111)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(221, 231)
         Me.Panel2.TabIndex = 45
@@ -401,7 +413,7 @@ Partial Class mainMenu
         Me.BunifuImageButton1.Image = Global.Library_Management_System.My.Resources.Resources.returnn
         Me.BunifuImageButton1.ImageActive = Nothing
         Me.BunifuImageButton1.Location = New System.Drawing.Point(9, 10)
-        Me.BunifuImageButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuImageButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
         Me.BunifuImageButton1.Size = New System.Drawing.Size(200, 185)
         Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -427,7 +439,7 @@ Partial Class mainMenu
         Me.Panel3.Controls.Add(Me.BunifuImageButton2)
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Location = New System.Drawing.Point(120, 111)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(221, 231)
         Me.Panel3.TabIndex = 45
@@ -438,7 +450,7 @@ Partial Class mainMenu
         Me.BunifuImageButton2.Image = Global.Library_Management_System.My.Resources.Resources.issue
         Me.BunifuImageButton2.ImageActive = Nothing
         Me.BunifuImageButton2.Location = New System.Drawing.Point(9, 10)
-        Me.BunifuImageButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuImageButton2.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuImageButton2.Name = "BunifuImageButton2"
         Me.BunifuImageButton2.Size = New System.Drawing.Size(200, 185)
         Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -469,7 +481,7 @@ Partial Class mainMenu
         Me.managepanel.GradientTopLeft = System.Drawing.Color.Cyan
         Me.managepanel.GradientTopRight = System.Drawing.Color.Cyan
         Me.managepanel.Location = New System.Drawing.Point(365, 41)
-        Me.managepanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.managepanel.Margin = New System.Windows.Forms.Padding(4)
         Me.managepanel.Name = "managepanel"
         Me.managepanel.Quality = 10
         Me.managepanel.Size = New System.Drawing.Size(875, 450)
@@ -481,7 +493,7 @@ Partial Class mainMenu
         Me.Panel4.Controls.Add(Me.userregister)
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Location = New System.Drawing.Point(533, 111)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(221, 231)
         Me.Panel4.TabIndex = 45
@@ -492,7 +504,7 @@ Partial Class mainMenu
         Me.userregister.Image = CType(resources.GetObject("userregister.Image"), System.Drawing.Image)
         Me.userregister.ImageActive = Nothing
         Me.userregister.Location = New System.Drawing.Point(9, 10)
-        Me.userregister.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.userregister.Margin = New System.Windows.Forms.Padding(4)
         Me.userregister.Name = "userregister"
         Me.userregister.Size = New System.Drawing.Size(200, 185)
         Me.userregister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -518,7 +530,7 @@ Partial Class mainMenu
         Me.Panel5.Controls.Add(Me.bookregister)
         Me.Panel5.Controls.Add(Me.Label4)
         Me.Panel5.Location = New System.Drawing.Point(120, 111)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(221, 231)
         Me.Panel5.TabIndex = 45
@@ -529,7 +541,7 @@ Partial Class mainMenu
         Me.bookregister.Image = Global.Library_Management_System.My.Resources.Resources.book
         Me.bookregister.ImageActive = Nothing
         Me.bookregister.Location = New System.Drawing.Point(9, 10)
-        Me.bookregister.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.bookregister.Margin = New System.Windows.Forms.Padding(4)
         Me.bookregister.Name = "bookregister"
         Me.bookregister.Size = New System.Drawing.Size(200, 185)
         Me.bookregister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -555,7 +567,7 @@ Partial Class mainMenu
         Me.incomereport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.incomereport.ImageActive = Nothing
         Me.incomereport.Location = New System.Drawing.Point(1015, 289)
-        Me.incomereport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.incomereport.Margin = New System.Windows.Forms.Padding(4)
         Me.incomereport.Name = "incomereport"
         Me.incomereport.Size = New System.Drawing.Size(128, 118)
         Me.incomereport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -569,7 +581,7 @@ Partial Class mainMenu
         Me.duereport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.duereport.ImageActive = Nothing
         Me.duereport.Location = New System.Drawing.Point(736, 289)
-        Me.duereport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.duereport.Margin = New System.Windows.Forms.Padding(4)
         Me.duereport.Name = "duereport"
         Me.duereport.Size = New System.Drawing.Size(128, 118)
         Me.duereport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -583,7 +595,7 @@ Partial Class mainMenu
         Me.returnedreport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.returnedreport.ImageActive = Nothing
         Me.returnedreport.Location = New System.Drawing.Point(463, 289)
-        Me.returnedreport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.returnedreport.Margin = New System.Windows.Forms.Padding(4)
         Me.returnedreport.Name = "returnedreport"
         Me.returnedreport.Size = New System.Drawing.Size(128, 118)
         Me.returnedreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -597,7 +609,7 @@ Partial Class mainMenu
         Me.issuedreport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.issuedreport.ImageActive = Nothing
         Me.issuedreport.Location = New System.Drawing.Point(1017, 78)
-        Me.issuedreport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.issuedreport.Margin = New System.Windows.Forms.Padding(4)
         Me.issuedreport.Name = "issuedreport"
         Me.issuedreport.Size = New System.Drawing.Size(128, 118)
         Me.issuedreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -611,7 +623,7 @@ Partial Class mainMenu
         Me.readersreport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.readersreport.ImageActive = Nothing
         Me.readersreport.Location = New System.Drawing.Point(739, 78)
-        Me.readersreport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readersreport.Margin = New System.Windows.Forms.Padding(4)
         Me.readersreport.Name = "readersreport"
         Me.readersreport.Size = New System.Drawing.Size(128, 118)
         Me.readersreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -625,25 +637,13 @@ Partial Class mainMenu
         Me.booksreport.Image = Global.Library_Management_System.My.Resources.Resources.report
         Me.booksreport.ImageActive = Nothing
         Me.booksreport.Location = New System.Drawing.Point(465, 78)
-        Me.booksreport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.booksreport.Margin = New System.Windows.Forms.Padding(4)
         Me.booksreport.Name = "booksreport"
         Me.booksreport.Size = New System.Drawing.Size(128, 118)
         Me.booksreport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.booksreport.TabIndex = 48
         Me.booksreport.TabStop = False
         Me.booksreport.Zoom = 10
-        '
-        'BunifuCustomLabel1
-        '
-        Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Lucida Sans Unicode", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(306, 54)
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(206, 34)
-        Me.BunifuCustomLabel1.TabIndex = 50
-        Me.BunifuCustomLabel1.Text = "Search Reader"
         '
         'mainMenu
         '
@@ -670,7 +670,7 @@ Partial Class mainMenu
         Me.Controls.Add(Me.toolbar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "mainMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

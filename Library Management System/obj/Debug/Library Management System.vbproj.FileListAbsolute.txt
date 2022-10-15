@@ -81,7 +81,6 @@ C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management Syst
 C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\bin\Debug\Library Management System.pdb
 C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\bin\Debug\Library Management System.xml
 C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\bin\Debug\Microsoft.ReportViewer.WinForms.xml
-C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library Management System.vbprojResolveAssemblyReference.cache
 C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.booksdue.resources
 C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.bookSearch.resources
 C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.booksReport.resources
@@ -101,3 +100,7 @@ C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management Syst
 C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library Management System.vbproj.GenerateResource.Cache
 C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library Management System.exe.manifest
 C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library Management System.application
+C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library Management System.vbproj.AssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library Management System.vbproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\Library-Management-System\Library Management System\obj\Debug\Library Management System.vbproj.CopyComplete
